@@ -1,0 +1,19 @@
+{
+	"name": "FoodText",
+	"time": "Fall 2016",
+	"status": "Complete",
+	"tools": "Python, Google Drive APIs, Raspberry Pi",
+	"short": "Delivers UCR's daily dining menus via regular text messages.",
+	"images": ["img/foodtext_1.png"],
+	"long": "After looking up UCR's residential restaurant's menus on a daily basis, I decided to automate it. The service sends out the day's menus from the three UCR restaurants via SMS, scrapping the websites and presenting the information in an easy-to-read format. Phone number registration is done via a Google Form, and the server runs on a Raspberry Pi."
+}
+
+{
+	"name": "LINE Bots",
+	"tools": "Python, LINE, Heroku, Google Drive APIs",
+	"time": "Summer 2016",
+	"status": "Complete (maintained)",
+	"short": "A LINE chatbot with a wide array of features.",
+	"images": ["img/linebot_1.png", "img/linebot_2.png"],
+	"long": "I made a LINE bot to aid a gaming clan with various aspects of their internal management. The bot has a variety of features including automatic alarm clocks, Google Forms autofill and submission, information retrieval from Google Sheets, algorithms to best guess intended commands, and various other functions. The bot has been used over 700,000 times by over 120 people, and is still in active use."
+},

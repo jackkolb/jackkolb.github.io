@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Jack Kolb</title>
+    <meta name="description" content="Hi! I am Jack Kolb, a Robotics PhD student studying Human-Robot Interaction.">
+    <meta name="author" content="Jack Kolb">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/projects.css">
+    <link rel="stylesheet" type="text/css" href="css/research.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link rel="stylesheet" type="text/css" href="css/project_page.css">
+    <link rel="stylesheet" type="text/css" href="css/timeline.css">
+  </head>
+
+  <body>
+    <br><br>   
+    <div id="preflag"></div>
+    <div id="title"></div>
+
+    <div id="home" class="main">
+      <div id="name-title" class="name-title" onclick="switchColorMode()">Jack Kolb</div>
+
+      <div id="welcome-title" class="welcome-title">Welcome to this portfolio of my works</div>
+      <img src="img/jack_robot_photo_close.jpg" alt="Photo of me" class="photo">
+      <br>
+
+      <div class="icon-row" style="padding: 15px 10px">
+        <a href="https://github.com/jackkolb" target="_blank" style="text-decoration: none; margin: 10px">
+          <svg viewBox='0 0 48 48' width='24' height='24'><path class='' d='M23.928 1.15C11 1.15.514 11.638.514 24.566c0 10.343 6.75 19.105 15.945 22.265 1.148.144 1.58-.574 1.58-1.15v-4.02c-6.465 1.436-7.902-3.16-7.902-3.16-1.005-2.73-2.586-3.45-2.586-3.45-2.154-1.435.144-1.435.144-1.435 2.298.144 3.59 2.442 3.59 2.442 2.156 3.59 5.46 2.586 6.753 2.01.142-1.58.86-2.585 1.435-3.16-5.17-.574-10.63-2.585-10.63-11.635 0-2.585.862-4.596 2.442-6.32-.287-.575-1.005-3.017.288-6.177 0 0 2.01-.574 6.464 2.442 1.866-.574 3.877-.718 5.888-.718 2.01 0 4.022.286 5.89.717 4.453-3.016 6.464-2.442 6.464-2.442 1.293 3.16.43 5.602.287 6.177a9.29 9.29 0 0 1 2.44 6.32c0 9.05-5.458 10.918-10.63 11.492.863.718 1.58 2.155 1.58 4.31v6.464c0 .574.432 1.292 1.58 1.15 9.338-3.16 15.946-11.924 15.946-22.266-.143-12.785-10.63-23.27-23.558-23.27z' id='github-icon' fill='darkslategrey' clip-rule='evenodd' fill-rule='evenodd'/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/jack-kolb-786134b8/" target="_blank" style="text-decoration: none; margin: 10px">
+          <svg style='width:24px;height:24px' viewBox='0 0 24 24'><path id='linkedin-icon' fill='#0072b1' d='M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z' /></svg>
+        </a>
+        <a href="https://scholar.google.com/citations?user=kKoPyvIAAAAJ" target="_blank" style="text-decoration: none; margin: 10px">
+          <svg style='width:24px;height:24px' viewBox='0 0 125 125'><style type='text/css'>.st0{fill:#356AC3;}.st1{fill:#A0C3FF;}.st2{fill:#76A7FA;}.st3{fill:#4285F4;}</style><polygon class='st3' points='61.44,98.67 0,48.64 61.44,0 61.44,98.67'/><polygon class='st0' points='61.44,98.67 122.88,48.64 61.44,0 61.44,98.67'/><path class='st1' d='M97.28,87.04c0-19.79-16.05-35.84-35.84-35.84c-19.79,0-35.84,16.05-35.84,35.84s16.05,35.84,35.84,35.84 C81.23,122.88,97.28,106.83,97.28,87.04L97.28,87.04z'/><path class='st2' d='M29.05,71.68C34.8,59.57,47.14,51.2,61.44,51.2c14.3,0,26.64,8.37,32.39,20.48H29.05L29.05,71.68z'/></svg>
+        </a>
+
+      </div>
+
+      <div class="buttons">
+        <div class="tab-title">
+          <button id="about-button" onclick="handleAbout()" style="margin: 10px"><b>About Me</b></button>
+        </div>
+        <div class="tab-title">
+          <button id="research-button" onclick="handleResearch()" style="margin: 10px"><b>Research</b></button>
+        </div>
+        <div class="tab-title">
+          <button id="projects-button" onclick="handleProjects()" style="margin: 10px"><b>Projects</b></button>
+        </div>
+        <div class="tab-title">
+          <button id="cv-button" onclick="handleCV()" style="margin: 10px"><b>CV</b></button>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="flag"></div>
+
+    <br>
+    <div src="js/projects.js"></div>
+    <div src="js/research.js"></div>
+    <div src="js/about.js"></div>
+    <div src="js/resume.js"></div>
+    <div src="js/utility.js"></div>
+
+    <div id="content" class="light"></div>
+
+    <div id="about" class="about-box intro-about">
+      <br>
+
+      I am a fourth-year <span style='color:#3b67e0'><a href='https://robotics.gatech.edu' target='_blank'><b>Robotics</b></a></span>
+      PhD student at <span style='color:hsl(47, 33%, 56%)'><a href='https://gatech.edu' target='_blank'><b>Georgia Tech</b></a></span>.
+      My research is broadly in <span style='color:darkmagenta'><b>human-robot interaction</b></span>, where I explore how robots can leverage a user's cognitive state to <span style='color:#e69d0d'><b>predict future team performance</b></span> and <span style='color:darkslateblue'><b>enhance the fluency of collaborations</b></span>.
+      
+      <br><br> 
+
+      I am advised by <span style='color:#008132'><a href='https://ae.gatech.edu/people/karen-m-feigh' target='_blank'><b>Karen Feigh</b></a></span>. I have also worked with <span style='color:#e433c3'><a href='https://c.gatech.edu/~chernova' target='_blank'><b>Sonia Chernova</b></a></span> and 
+      <span style='color:#dd2d2d'><b>Harish Ravichandar</b></span>.
+      
+      <br><br>
+
+      I have interned at <span style='color:#5d34c1'><a href='https://gatik.ai' target='_blank'><b>Gatik</b></a></span>, where
+      I researched how autonomous short-haul trucks can use graph neural networks to forecast the trajectories of surrounding vehicles.
+
+      <br><br>
+
+      Prior to graduate school, I received my B.S. in <span style='color:#dd2d2d'><a href='https://www.me.ucr.edu' target='_blank'><b>mechanical engineering</b></a></span>
+      from the <span style='color:#3b67e0'><a href='https://ucr.edu' target='_blank'><b>University of California</b></span>
+      at <span style='color:#e69d0d'><b>Riverside</b></a></span>. I was most involved with <span style='color:#e69d0d'><a href='https://robosub.ucr.edu' target='_blank'><b>RoboSub</b></a></span>,
+      <span style='color:darkmagenta'><a href='https://housing.ucr.edu/residential-life' target='_blank'><b>Residential Life</b></a></span>,
+      and <span style='color:#3b67e0'><a href='https://ieeeucr.org' target='_blank'><b>IEEE@UCR</b></a></span>.
+    
+      <br><br><br>
+      
+      I spend my free time working on side projects, playing piano, and volunteering with student organizations.<br><br>
+      <div id="timeline"></div>
+      <circle cx='100' cy='100' r='75' />
+    </div>
+    <br><br><br><br><br>
+
+    <script src="js/index.js"></script>
+    <script src="js/project_page.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/research.js"></script>
+    <script src="js/about.js"></script>
+    <script src="js/resume.js"></script>
+    <script src="js/timeline.js"></script>
+    <script src="js/utility.js"></script>
+
+    <script>
+      var about_active = false;
+      var projects_active = false;
+      var projectpage_active = false;
+      var research_active = false;
+
+      handleAbout()
+    </script>
+
+  </body>
+</html>

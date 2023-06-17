@@ -1,0 +1,106 @@
+
+body {
+  background-color: #fcfcfc;
+  font-family: "Source Code Pro";
+  font-size: 13pt;
+	color: #253f3f;
+  user-select: none;
+}
+
+
+.name-title {
+  text-align: center;
+  color: black;
+  font-size: 30pt;
+  font-weight: bold;
+}
+
+
+.welcome-title {
+  text-align: center;
+  color: darkslategray;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .welcome-title {
+    font-size: 20pt
+  }
+
+  .icon-row {
+    height: 40pt
+  }
+
+  .img-photo {
+    width: 300px
+  }
+} 
+
+.icon-row {
+	text-align: center;
+	height: 20pt;
+}
+
+
+.buttons {
+	text-align: center;
+}
+
+
+.tab-title {
+  text-align: center;
+  display: inline-block;
+  color: black;
+}
+
+
+button {
+  font-family: "Source Code Pro", Consolas, Monaco, Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+
+  background-color: inherit;
+  border: none;
+  padding: 5pt;
+  font-size: 18pt;
+  color: darkslategray;
+}
+
+button:hover {
+  cursor: pointer;
+  border-bottom: 3px solid grey;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  color: green;
+}
+
+.light {
+  color: darkslateblue;
+}
+
+.dark {
+  color: whitesmoke;
+}
+
+.dark-body {
+  background-color: black;
+  color: whitesmoke;
+}
+
+img.photo {
+  border-radius: 50%;
+  border: 1.5px solid darkmagenta;
+  width: 150px;
+  margin-top: 20px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

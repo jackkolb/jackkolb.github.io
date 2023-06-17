@@ -1,0 +1,167 @@
+{
+	"projects":
+	[
+		{
+			"name": "Multi-Agent Robot Operation Scenarios",
+			"github": "https://github.com/GT-RAIL/cognitive-states-in-human-robot-teaming",
+			"research": "true",
+			"tools": "Python, Flask, HTML, CSS, ROS",
+			"time": "2021",
+			"status": "Complete",
+			"short": "A set of three browser-controlled multi-robot operation scenarios in simulation.",
+			"images": [],
+			"long": "A set of three robot control scenarios for user studies. Each scenario leverages a unique aspect of multi-agent control: surveillance, networking, and teleoperation. Users control robots via their webbrowser via a select-and-click waypoint interface, and have visual access to robot camera feeds and an overhead map. On the backend, the webbrowser connects to a ROS-enabled server that controls the robots via the WeBots simulator. This project does not yet have a public-facing repository, please contact if you would like to use it."
+		},
+
+		{
+			"name": "Suite of Cognitive Skill Tests",
+			"github": "https://github.com/GT-RAIL",
+			"research": "true",
+			"tools": "Python, Flask, HTML, CSS",
+			"time": "2020-2021",
+			"status": "Complete",
+			"short": "A set of three short, simple, online tests to measure user cognitive skills.",
+			"long": "A set of three cognitive skill tests for user studies. The tests are based on cognitive science literature, conducted via a browser, and evaluate a user's current capacity for <i>situational awareness</i>, <i>multi-object tracking</i>, and <i>network inference</i>. The tests are designed to be short, abstracted, and visually appealing."
+		},
+
+		{
+			"name": "FirstGlance",
+			"github": "https://github.com/jackkolb/primafacia",
+			"hackathon": "true",
+			"tools": "Python, Flask, HTML, CSS, SocketIO, Firebase, OpenCV",
+			"time": "Biohack 2019",
+			"status": "Complete",
+			"short": "A seamless patient checkup system, using facial recognition authentication.",
+			"images": ["img/primafacia_1.png", "img/primafacia_4.png"],
+			"long": "PrimaFacia is designed to innovate medical records through a clean, sleek interface. PrimaFacia incorporates three major aspects of general medical checkups: authentication and verification of doctors, patient reception, and checkup room management Patients sign into the systemm and are assigned to a queue; a process moves patients from the queue into open appointment rooms; doctors are recognized as they enter the room, prompting the retrieval of patient medical recod. All this through a UX-focused design."
+		},
+
+
+		{
+			"name": "Fire Watch",
+			"github": "https://github.com/jackkolb/firewatch",
+			"hackathon": "true",
+			"tools": "Python, Flask, HTML, CSS",
+			"time": "HackUCI 2019",
+			"status": "Complete",
+			"short": "Uses machine learning to predict fire risk throughout California.",
+			"images": ["img/firewatch_1.png", "img/firewatch_2.png"],
+			"long": "Developed as an opportunity to learn basic machine learning, Fire Watch uses linear algebra and 400,000 data points of California's vegetation, precipitation, and fire history to predict the locations of fires across California."
+		},
+
+		{
+			"name": "Syncopate",
+			"github": "https://github.com/jackkolb/syncopate",
+			"tools": "Python, Flask, Bash",
+			"time": "2019",
+			"status": "In Progress",
+			"short": "Load balances and manages projects across a scalable network of devices.",
+			"images": [],
+			"long": "Syncopate allows for distributing many projects across a number of computers. Nodes (the devices) register themselves with a centrally hosted Manager, which gives the Nodes projects as per their available resources and reassigns projects when Nodes go offline. A human Controller is able to see and manage the Nodes' project statuses via the Manager. Syncopates aims to make hosting many time-persistent projects simple!"
+		},
+
+		{
+			"name": "kolb.dev",
+			"github": "https://kolb.dev",
+			"tools": "PHP, Golang",
+			"time": "2018 - present",
+			"status": "Continual Progress",
+			"short": "Small web projects worth hosting.",
+			"images": [],
+			"long": "kolb.dev hosts my small projects and APIs. Since no one really knows about them I keep all resources open for public use. This collection will be added to as more are created (and my Google Cloud usage stays at $0.05/month)!"
+		},
+
+		{
+			"name": "Littlebox",
+			"github": "https://github.com/jackkolb/littlebox",
+			"tools": "C++, Boost",
+			"time": "Early 2018",
+			"status": "In Progress",
+			"short": "A cross-platform, remote-accessed file server.",
+			"images": ["img/littlebox_1.png"],
+			"long": "Littlebox is a TCP/IP file server (and client) written in C++ using the boost::asio library. It supports three functions: push (add a file to the server), pull (retrieve a file from the server), and delete (delete a file from the server), however other functions can be built using these three. The idea is to make the server as simple and secure as possible -- separate passwords for server and files, RSA to deliver symmetric keys, thorough documentation, and easy deployment."
+		},
+
+		{
+			"name": "ElectionCat",
+			"hackathon": "true",
+			"github": "https://github.com/jackkolb/electioncat",
+			"tools": "HTML, CSS, Python, Flask, Azure",
+			"time": "HackTech 2018",
+			"status": "Complete",
+			"short": "A simple, beautiful, election system for student organizations.",
+			"images": ["img/electioncat_1.png", "img/electioncat_2.png"],
+			"long": "ElectionCat is made for university student organization elections. Setup is simple and hassle-free, with straightforward JSON files holding candidate and voter information. The only dependency is Python Flask (webserver framework). Deployment is painfree, just download the package, change the settings, and upload the package to Azure/Heroku/AWS. The webapp looks great on both desktop and mobile devices, and 'just works'."
+		},
+		
+		{
+			"name": "Blindsight",
+			"hackathon": "true",
+			"github": "https://github.com/jackkolb/blindsight",
+			"tools": "Python, Flask, Raspberry Pi",
+			"time": "Citrus Hack 2018",
+			"status": "Complete",
+			"short": "Translates your surroundings into haptic feedback.",
+			"images": ["img/blindsight_1.png", "img/blindsight_2.png"],
+			"long": "Blindsight uses a cheap oscillating range sensor mounted on a hat to create a depth field of its surroundings, activating vibration sensors corresponding to the direction and proximity of surrounding objects. This allows you to 'feel' your surroundings, allowing visually impaired people to navigate through buildings. Won 3rd place at Citrus Hack 2018."
+		},
+
+		{
+			"name": "WiCon",
+			"github": "https://github.com/jackkolb/wicon",
+			"time": "Late 2017, Early 2018",
+			"status": "Complete",
+			"tools": "Python, GTK3",
+			"short": "A GUI WiFi manager for Linux desktops.",
+			"images": ["img/wicon_1.png", "img/wicon_2.png"],
+			"long": "WiCon comes from a personal need: a simple, straightforward, wifi connection tool for ArchLinux. It is essentially a GUI wrapper for the iw, wpa_supplicant, and dhcpcd tools, leaving the user with minimal command line work. The interface is clean and simple: the user selects the connection, presses 'Connect', and enters their login information. WiCon does its best to handle all the configuration setup."
+		},
+
+		{
+			"name": "Froot",
+			"hackathon": "true",
+			"time": "CutieHack, Fall 2018",
+			"github": "https://github.com/jackkolb/froot",
+			"tools": "HTML/CSS, Javascript",
+			"status": "Complete",
+			"short": "Creates recipes using discounted grocery items.",
+			"images": ["img/froot_1.png", "img/froot_2.png"],
+			"long": "Froot finds recipes using currently discounted grocery items. It is intended for cooperation with local grocery stores (pulling from their internal databases) to help broke college students eat better, for less."
+		},
+
+		{
+			"name": "GoodMorning",
+			"github": "https://github.com/jackkolb/goodmorning",
+			"time": "Early 2018",
+			"status": "Complete",
+			"tools": "Python, Tkinter, Several Web-Based APIs, Raspberry Pi",
+			"short": "A dynamic display of time, weather and market information.",
+			"images": ["img/goodmorning_1.png", "img/goodmorning_2.png"],
+			"long": "Using a cheap 8-inch screen and a Raspberry Pi, I wrote a 'Good Morning' display that shows the date, time, weather, and market information over a background that changes by the time and weather."
+		},
+
+		{
+			"name": "Three Cups",
+			"hackathon": "true",
+			"status": "Complete",
+			"time": "CutieHack, Spring 2017",
+			"github": "https://github.com/jackkolb/threecups",
+			"tools": "Python, OpenCV, Raspberry Pi",
+			"short": "A robot that observes and tracks three identical cups.",
+			"images": ["img/threecups_1.png", "img/threecups_2.png"],
+			"long": "You probably know the game: a magician has three identical cups, one with a ball underneath. They show you the one with the ball, shuffle them thoroughly, and you need to identify the cup with the ball. This project acts as the observer, tracking the cups and showing (through turning on one of three lights) the one with the ball. It actually worked quite well, better than humans!"
+		},
+
+		{
+			"name": "TranSec",
+			"hackathon": "true",
+			"status": "Complete",
+			"github": "https://github.com/jackkolb/transec",
+			"time": "Enginuity Hackathon, Spring 2017",
+			"tools": "C++, WinSock Library",
+			"short": "An end-to-end encrypted file transfer program.",
+			"images": ["img/transec_1.png"],
+			"long": "TranSec transfers files between computers assuming prying eyes at all points between the sender and receiver's network cards. The code itself is highly inefficient, the encryption algorithm myself is questionable, however it was my first C++ project, it works, and I am proud of it."
+		}
+	]
+}
