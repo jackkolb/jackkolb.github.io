@@ -2,6 +2,14 @@ function createTimeline() {
     timeline = [
         {
             type: "Conference",
+            location: "IROS",
+            title: "The Effects of Robot Motion on Comfort Dynamics of Novice Users in Close-Proximity Human-Robot Interactions",
+            link: "https://jackkolb.com/pdf/IROS_23_The_Effects_of_Robot_Motion_on_Comfort_Dynamics_of_Novice_Users_in_Close-Proximity_Human-Robot_Interactions.pdf",
+            month: "Oct",
+            year: 2023,
+        },
+        {
+            type: "Conference",
             location: "RO-MAN",
             title: "The Effects of Inaccurate Decision-Support Systems on Structured Shared Decision-Making for Human-Robot Teams",
             link: "https://jackkolb.com/pdf/ROMAN_23_The_Effects_of_Inaccurate_Decision-Support_Systems_on_Structured_Shared_Decision-Making_for_Human-Robot_Teams.pdf",
