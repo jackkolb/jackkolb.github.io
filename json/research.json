@@ -2,6 +2,28 @@
 	"research":
 	[
 		{
+            "name": "The Effects of Robot Motion on Comfort Dynamics of Novice Users in Close-Proximity Human-Robot Interactions",
+			"conference": "true",
+			"authors": "Pierce Howell, *<b>Jack Kolb</b>, *Yifan Liu, and Harish Ravichandar",
+            "paper": "https://jackkolb.com/pdf/IROS_23_Effects_of_Robot_Motion_on_Comfort_Dynamics_of_Novice_Users_in_Close_Proximity_Human_Robot_Interactions.pdf",
+			"tools": "Conference Proceedings of IROS '23",
+			"time": "2023",
+            "status": "Complete",
+			"short": "User comfort with various robot motion planning strategies is assessed in a close-proximity collaborative assembly task.",
+			"long": "[ABSTRACT] Effective and fluent close-proximity human-robot interaction requires understanding how humans get habituated to robots and how robot motion affects human comfort.  While prior work has identified humans' preferences over robot motion characteristics and studied their influence on comfort, we are yet to understand how novice first-time robot users get habituated to robots and how robot motion impacts the dynamics of comfort over repeated interactions. To take the first step towards such understanding, we carry out a user study to investigate the connections between robot motion and user comfort and habituation. Specifically, we study the influence of workspace overlap, end-effector speed, and robot motion legibility on overall comfort and its evolution over repeated interactions. Our analyses reveal that workspace overlap, in contrast to speed and legibility, has a significant impact on users' perceived comfort and habituation. In particular, lower workspace overlap leads to users reporting significantly higher overall comfort, lower variations in comfort, and fewer fluctuations in comfort levels during habituation."
+        },
+        {
+			"name": "The Effects of Inaccurate Decision-Support Systems on Structured Shared Decision-Making for Human-Robot Teams",
+			"conference": "true",
+			"authors": "*<b>Jack Kolb</b>, *Divya Srivastava, Karen M. Feigh",
+            "paper": "https://jackkolb.com/pdf/ROMAN_23_Structuring_Shared_Decision_Making_in_Human_Robot_Teams.pdf",
+            "tools": "Conference Proceedings of RO-MAN '23",
+            "time": "2023",
+			"status": "Complete",
+			"short": "Explores the impact of the type of robot recommendation error on mission performance in a structured shared decision-making domain.",
+			"long": "[ABSTRACT] Human-robot teams can leverage a human's expertise and a robot's computational power to meaningfully improve mission outcomes. In command and control domains, the robot teammate can also act as a decision-support system to advise human users. However, decision-support systems are susceptible to human factors issues including miscalibrated trust and degraded team performance. Recent work has mitigated these issues by using cognitive forcing functions to structure shared decision-making systems and place users as proactive on-the-loop actors. We bring this approach to a human-robot teaming domain, and investigate how Type I and Type II errors in the robot's recommendation affects team performance and user rational trust. We present the architecture of our decision-making process and a Mars rover landing experiment domain. Results from a comprehensive user study demonstrate that the error type of the robot's recommendation forms a trade-off between team performance and rational trust."
+        },
+		{
 			"name": "Leveraging Cognitive States in Human-Robot Teaming",
 			"conference": "true",
 			"authors": "<b>Jack Kolb</b>, Harish Ravichandar, and Sonia Chernova",
