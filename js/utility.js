@@ -39,7 +39,6 @@ function switchColorMode() {
 		document.getElementById("welcome-title").classList.add('dark');
 		document.getElementById("github-icon").setAttribute("fill", "whitesmoke");
 		document.getElementById("linkedin-icon").setAttribute("fill", "whitesmoke");
-		document.getElementById("facebook-icon").setAttribute("fill", "whitesmoke");
 
 		icons = document.getElementsByClassName("project-github-icon");
 		for (i=0; i<icons.length-1; i++) {
