@@ -1,51 +1,38 @@
-
 body {
   background-color: #fcfcfc;
   font-family: "Source Code Pro";
-  font-size: 13pt;
+  font-size: 1.1rem;
 	color: #253f3f;
-  user-select: none;
 }
-
 
 .name-title {
   text-align: center;
   color: black;
-  font-size: 30pt;
+  font-size: 2.5rem;
   font-weight: bold;
+  user-select: none;
 }
-
 
 .welcome-title {
   text-align: center;
   color: darkslategray;
+  user-select: none;
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .welcome-title {
-    font-size: 20pt
-  }
-
-  .icon-row {
-    height: 40pt
+    font-size: 1.25rem
   }
 
   .img-photo {
-    width: 300px
+    width: 30rem
   }
 } 
-
-.icon-row {
-	text-align: center;
-	height: 20pt;
-}
-
 
 .buttons {
 	text-align: center;
 }
-
 
 .tab-title {
   text-align: center;
@@ -53,20 +40,26 @@ body {
   color: black;
 }
 
-
 button {
   font-family: "Source Code Pro", Consolas, Monaco, Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
-
   background-color: inherit;
   border: none;
   padding: 5pt;
   font-size: 18pt;
   color: darkslategray;
+  margin: 10px 10px 13px 10px;
 }
 
 button:hover {
   cursor: pointer;
+  margin-bottom: 10px;
   border-bottom: 3px solid grey;
+}
+
+a.header-icon {
+  /* width: 24px; */
+  /* height: 24px; */
+  margin: 0.4rem;
 }
 
 a {
@@ -93,9 +86,10 @@ p {
 
 img.photo {
   border-radius: 50%;
-  border: 1.5px solid darkmagenta;
-  width: 150px;
-  margin-top: 20px;
+  /* border: 1.5px solid darkmagenta; */
+  width: 12rem;
+  margin-top: 1.25rem;
+  box-shadow: 0 0 .4rem grey;
 }
 
 .main {
