@@ -27,6 +27,7 @@ function createTimeline() {
         {
             type: "Award",
             award: "Successfully passed my PhD Proposal!",
+            link: "https://jackkolb.com/pdf/Kolb_Proposal_Presentation.pdf",
             month: "Jan",
             year: 2024,
         },
