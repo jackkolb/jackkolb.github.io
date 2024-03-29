@@ -21,7 +21,9 @@
 	color: #990022;
 }
 
-.org-title {
+.bio-link {
+	border-radius: 0.3rem;
+	transition: .4s ease;
 }
 
 a.org-about {
