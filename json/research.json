@@ -2,6 +2,17 @@
 	"research":
 	[
 		{
+            "name": "Impact of Abstraction Levels of Context Information on AI-Advised Decision Making for an Entry Descent and Landing Task",
+			"conference": "true",
+			"authors": "Divya Srivastava, <b>Jack Kolb</b>, and Karen M. Feigh",
+            "paper": "https://jackkolb.com/pdf/SciTech_24_Impact_of_Abstraction_Levels_of_Context_Information_on_AI_Advised_Decision_Making_for_an_Entry_Descent_and_Landing_Task.pdf",
+			"tools": "Conference Proceedings of SciTech '24",
+			"time": "2024",
+            "status": "Complete",
+			"short": "A joint human-robot decision making task is structured into a three-step process, improving task performance, user trust, and user situation awareness.",
+			"long": "[ABSTRACT] AI-advised Decision Making is a form of human-autonomy teaming in which an AI recommender system suggests a solution to a human operator, who is responsible for the final decision. This work seeks to empower and effectively utilize these human decision makers by supporting their cognitive process of judgement. Previous work has found that providing decision makers with relevant information that the AI uses to generate possible courses of action improves crucial team decision-making metrics, and is a viable alternative solution to explaining or interpreting complex AI models. This paper investigates whether this technique and its observed benefits hold when the relevant information provided to the decision maker is displayed at different levels of abstraction. Findings indicate that this technique of supporting the human’s judgement process is effective in (1) boosting the human decision maker’s situation awareness and task performance, (2) calibrating their trust in AI teammates, and (3) reducing over-reliance on an AI partner, irrespective of the abstraction level at which information was displayed."
+        },
+		{
             "name": "The Effects of Robot Motion on Comfort Dynamics of Novice Users in Close-Proximity Human-Robot Interactions",
 			"conference": "true",
 			"authors": "Pierce Howell, *<b>Jack Kolb</b>, *Yifan Liu, and Harish Ravichandar",
