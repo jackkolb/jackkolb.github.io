@@ -56,10 +56,33 @@ button:hover {
   border-bottom: 3px solid grey;
 }
 
-a.header-icon {
-  /* width: 24px; */
-  /* height: 24px; */
-  margin: 0.4rem;
+div.icon-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-icon {
+  margin: 1rem 1rem 0.5rem 1rem;
+  width: 2rem;
+  height: 2rem;
+  flex-direction: row;
+  transition: .2s ease;
+}
+
+.header-icon:hover {
+  margin-bottom: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+div.copied-text {
+  font-size: 0.8rem;
+}
+
+div.fadeout-text {
+  font-size: 0;
+  transition: .5s ease;
 }
 
 a {
@@ -90,6 +113,12 @@ img.photo {
   width: 12rem;
   margin-top: 1.25rem;
   box-shadow: 0 0 .4rem grey;
+  transition: .4s ease;
+}
+
+img.photo:hover {
+  box-shadow: 0 0 1.5rem blue;
+  cursor: pointer;
 }
 
 .main {
