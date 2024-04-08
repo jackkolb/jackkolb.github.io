@@ -38,7 +38,6 @@ function switchColorMode() {
 		document.getElementById("name-title").classList.add('dark');
 		document.getElementById("welcome-title").classList.add('dark');
 		document.getElementById("github-icon").setAttribute("fill", "whitesmoke");
-		document.getElementById("linkedin-icon").setAttribute("fill", "whitesmoke");
 
 		icons = document.getElementsByClassName("project-github-icon");
 		for (i=0; i<icons.length-1; i++) {
@@ -57,6 +56,7 @@ function switchColorMode() {
 
 		document.getElementById("about-button").classList.add('dark');
 		document.getElementById("projects-button").classList.add('dark');
+		document.getElementById("research-button").classList.add('dark');
 		document.getElementById("cv-button").classList.add('dark');
 		
 	}
@@ -67,12 +67,11 @@ function switchColorMode() {
 
 		document.getElementById("name-title").classList.remove('dark');
 		document.getElementById("welcome-title").classList.remove('dark');
-		document.getElementById("github-icon").setAttribute("fill", "darkslategrey");
-		document.getElementById("linkedin-icon").setAttribute("fill", "darkslategrey");
+		document.getElementById("github-icon").setAttribute("fill", "black");
 
 		icons = document.getElementsByClassName("project-github-icon");
 		for (i=0; i<icons.length-1; i++) {
-			icons[i].setAttribute("fill", "darkslategrey");
+			icons[i].setAttribute("fill", "black");
 		}
 
 		descs = document.getElementsByClassName("project-entry-desc");
@@ -82,6 +81,7 @@ function switchColorMode() {
 
 		document.getElementById("about-button").classList.remove('dark');
 		document.getElementById("projects-button").classList.remove('dark');
+		document.getElementById("research-button").classList.remove('dark');
 		document.getElementById("cv-button").classList.remove('dark');
 	}
 }
