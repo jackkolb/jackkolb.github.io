@@ -100,6 +100,7 @@ p {
 
 .dark {
   color: whitesmoke;
+  transition: 1.0s ease;
 }
 
 .dark-body {
