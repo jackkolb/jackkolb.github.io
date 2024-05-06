@@ -40,7 +40,7 @@
 			"authors": "<b>Jack Kolb</b>, Harish Ravichandar, and Sonia Chernova",
 			"paper": "https://jackkolb.com/pdf/ROMAN_22_Leveraging_Cognitive_States_in_Human_Robot_Teaming.pdf",
 			"github": "https://github.com/GT-RAIL/cognitive-states-in-human-robot-teaming",
-			"tools": "Conference Proceedings of RO-MAN '22",
+			"tools": "Conference Proceedings of RO-MAN '22, <b>[Best Student Paper Finalist, 3/237, 1.2%]</b>",
 			"time": "2022",
 			"status": "Complete",
 			"short": "Measurements of user cognitive states are used to inform a role assignment algorithm and improve teaming performance.",
