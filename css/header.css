@@ -1,130 +1,140 @@
 body {
-  background-color: #fcfcfc;
-  font-family: "Source Code Pro";
-  font-size: 1.1rem;
-	color: #253f3f;
+    background-color: #fcfcfc;
+    font-family: "Source Code Pro";
+    font-size: 1.1rem;
+    color: #253f3f;
 }
 
 .name-title {
-  text-align: center;
-  color: black;
-  font-size: 2.5rem;
-  font-weight: bold;
-  user-select: none;
+    text-align: center;
+    color: black;
+    font-size: 2.5rem;
+    font-weight: bold;
+    user-select: none;
 }
 
 .welcome-title {
-  text-align: center;
-  color: darkslategray;
-  user-select: none;
+    text-align: center;
+    color: darkslategray;
+    user-select: none;
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .welcome-title {
-    font-size: 1.25rem
-  }
+    .welcome-title {
+        font-size: 1.25rem;
+    }
 
-  .img-photo {
-    width: 30rem
-  }
-} 
+    .img-photo {
+        width: 30rem;
+    }
+}
 
 .buttons {
-	text-align: center;
+    text-align: center;
 }
 
 .tab-title {
-  text-align: center;
-  display: inline-block;
-  color: black;
+    text-align: center;
+    display: inline-block;
+    color: black;
 }
 
 button {
-  font-family: "Source Code Pro", Consolas, Monaco, Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
-  background-color: inherit;
-  border: none;
-  padding: 5pt;
-  font-size: 18pt;
-  color: darkslategray;
-  margin: 10px 10px 13px 10px;
+    font-family:
+        "Source Code Pro",
+        Consolas,
+        Monaco,
+        Lucida Console,
+        Liberation Mono,
+        DejaVu Sans Mono,
+        Bitstream Vera Sans Mono,
+        Courier New,
+        monospace;
+    background-color: inherit;
+    border: none;
+    padding: 5pt;
+    font-size: 18pt;
+    color: darkslategray;
+    margin: 10px 10px 13px 10px;
 }
 
 button:hover {
-  cursor: pointer;
-  margin-bottom: 10px;
-  border-bottom: 3px solid grey;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-bottom: 3px solid grey;
 }
 
 div.icon-row {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .header-icon {
-  margin: 1rem 1rem 0.5rem 1rem;
-  width: 2rem;
-  height: 2rem;
-  flex-direction: row;
-  transition: .2s ease;
+    margin: 1rem 1rem 0.5rem 1rem;
+    width: 2rem;
+    height: 2rem;
+    flex-direction: row;
+    transition: 0.2s ease;
 }
 
 .header-icon:hover {
-  margin-bottom: 0;
-  width: 2.5rem;
-  height: 2.5rem;
-  cursor: pointer;
+    margin-bottom: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
 }
 
 div.copied-text {
-  font-size: 0.8rem;
+    font-size: 0.8rem;
 }
 
 div.fadeout-text {
-  font-size: 0;
-  transition: .5s ease;
+    font-size: 0;
+    transition: 0.5s ease;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 p {
-  color: green;
+    color: green;
 }
 
 .light {
-  color: darkslateblue;
+    color: darkslateblue;
 }
 
 .dark {
-  color: whitesmoke;
-  transition: 1.0s ease;
+    color: whitesmoke;
+    transition: 1s ease;
 }
 
 .dark-body {
-  background-color: black;
-  color: whitesmoke;
+    background-color: black;
+    color: whitesmoke;
 }
 
 img.photo {
-  border-radius: 50%;
-  /* border: 1.5px solid darkmagenta; */
-  width: 12rem;
-  margin-top: 1.25rem;
-  box-shadow: 0 0 .4rem grey;
-  transition: .4s ease;
+    border-radius: 50%;
+    /* border: 1.5px solid darkmagenta; */
+    width: 12rem;
+    margin-top: 1.25rem;
+    box-shadow: 0 0 0.4rem grey;
+    transition: 0.4s ease;
+    user-select: none;
 }
 
 img.photo:hover {
-  box-shadow: 0 0 1.5rem blue;
-  cursor: pointer;
+    box-shadow: 0 0 1.5rem blue;
+    cursor: pointer;
 }
 
 .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
