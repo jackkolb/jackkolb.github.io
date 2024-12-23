@@ -6,13 +6,13 @@ var researchList = [
     conference: "true",
     authors: "<b>Jack Kolb</b>, Karen M. Feigh",
     paper:
-      "https://jackkolb.com/pdf/SciTech_24_Impact_of_Abstraction_Levels_of_Context_Information_on_AI_Advised_Decision_Making_for_an_Entry_Descent_and_Landing_Task.pdf",
+      "https://jackkolb.com/pdf/IROS_24_Inferring_Belief_States_in_Partially_Observable_Human_Robot_Teams.pdf",
     tools: "Conference Proceedings of IEEE/RSJ IROS '24",
     time: "2024",
     status: "Complete",
     short:
       "Presents an architecture for predicting user responses to situation responses in human-robot teams, evaluated on a modified OvercookedAI domain.",
-    long: "[ABSTRACT] AI-advised Decision Making is a form of human-autonomy teaming in which an AI recommender system suggests a solution to a human operator, who is responsible for the final decision. This work seeks to empower and effectively utilize these human decision makers by supporting their cognitive process of judgement. Previous work has found that providing decision makers with relevant information that the AI uses to generate possible courses of action improves crucial team decision-making metrics, and is a viable alternative solution to explaining or interpreting complex AI models. This paper investigates whether this technique and its observed benefits hold when the relevant information provided to the decision maker is displayed at different levels of abstraction. Findings indicate that this technique of supporting the human’s judgement process is effective in (1) boosting the human decision maker’s situation awareness and task performance, (2) calibrating their trust in AI teammates, and (3) reducing over-reliance on an AI partner, irrespective of the abstraction level at which information was displayed.",
+    long: "[ABSTRACT] We investigate the real-time estimation of human situation awareness using observations from a robot teammate with limited visibility. In human factors and human-autonomy teaming, it is recognized that individuals navigate their environments using an internal mental simulation, or \textit{mental model}. The mental model informs cognitive processes including situation awareness, contextual reasoning, and task planning. In teaming domains, the mental model includes a \textit{team model} of each teammate's beliefs and capabilities, enabling fluent teamwork without the need for explicit communication. However, little work has applied team models to human-robot teaming. In this work we compare the performance of two models, logical predicates and large language models, at estimating user situation awareness over varying visibility conditions. Our results indicate that the methods are largely resilient to low-visibility conditions in our domain, however opportunities exist to improve their overall performance.",
   },
   {
     name: "Human-AI Collaboration in Autonomous Aerial Vehicles for ISR: Experience, Trust, and Perception",
