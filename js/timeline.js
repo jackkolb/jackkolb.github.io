@@ -20,6 +20,15 @@ function createTimeline() {
     },
     {
       type: "Conference",
+      location: "HFES ASPIRE",
+      title:
+        "Joint Intelligence, Surveillance, and Reconnaissance Mission Collaboration with Autonomous Pilots",
+      link: "https://jackkolb.com/pdf/HFES_24_Joint_Intelligence_Surveillance_and_Reconnaissance_Mission_Collaboration_with_Autonomous_Pilots.pdf",
+      month: "Sep",
+      year: 2024,
+    },
+    {
+      type: "Conference",
       location: "AIAA/IEEE DASC",
       title:
         "Towards Safe Collaboration Between Autonomous Pilots and Human Crews for Intelligence, Surveillance, and Reconnaissance",
