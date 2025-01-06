@@ -5,7 +5,7 @@ function createTimeline() {
       location: "IEEE/RSJ IROS",
       title:
         "Inferring Belief States in Partially-Observable Human-Robot Teams",
-      // link: "https://jackkolb.com/pdf/DASC_24_Towards_Safe_Collaboration_Between_Autonomous_Pilots_and_Human_Crews_for_Intelligence_Surveillance_and_Reconnaissance.pdf",
+      link: "https://jackkolb.com/pdf/IROS_24_Inferring_Belief_States_in_Partially_Observable_Human_Robot_Teams.pdf",
       month: "Oct",
       year: 2024,
     },
@@ -14,7 +14,7 @@ function createTimeline() {
       location: "IEEE ICRA@40",
       title:
         "A Framework for Inferring Belief States in Partially-Observable Human-Robot Teams",
-      // link: "https://jackkolb.com/pdf/DASC_24_Towards_Safe_Collaboration_Between_Autonomous_Pilots_and_Human_Crews_for_Intelligence_Surveillance_and_Reconnaissance.pdf",
+      link: "https://jackkolb.com/pdf/ICRA40_A_Framework_for_Inferring_Belief_States_in_Partially_Observable_Human_Robot_Teams.pdf",
       month: "Sep",
       year: 2024,
     },
