@@ -20,7 +20,7 @@ var researchList = [
     authors:
       "Richard Agbeyibor, Vedant Ruia,  <b>Jack Kolb</b>, Karen M. Feigh",
     paper:
-      "https://jackkolb.com/pdf/SciTech_24_Impact_of_Abstraction_Levels_of_Context_Information_on_AI_Advised_Decision_Making_for_an_Entry_Descent_and_Landing_Task.pdf",
+      "https://jackkolb.com/pdf/HFES_24_Joint_Intelligence_Surveillance_and_Reconnaissance_Mission_Collaboration_with_Autonomous_Pilots.pdf",
     tools: "Conference Proceedings of HFES ASPIRE '24",
     time: "2024",
     status: "Complete",
@@ -34,7 +34,7 @@ var researchList = [
     authors:
       "Richard Agbeyibor, Vedant Ruia,  <b>Jack Kolb</b>, Carmen Cortes, Ty Mancao, Samuel Coogan, Karen M. Feigh",
     paper:
-      "https://jackkolb.com/pdf/SciTech_24_Impact_of_Abstraction_Levels_of_Context_Information_on_AI_Advised_Decision_Making_for_an_Entry_Descent_and_Landing_Task.pdf",
+      "https://jackkolb.com/pdf/DASC_24_Towards_Safe_Collaboration_Between_Autonomous_Pilots_and_Human_Crews_for_Intelligence_Surveillance_and_Reconnaissance.pdf",
     tools: "Conference Proceedings of IEEE DASC '24",
     time: "2024",
     status: "Complete",
@@ -48,7 +48,7 @@ var researchList = [
     authors:
       "Richard Agbeyibor, Vedant Ruia, Carmen Cortes, <b>Jack Kolb</b>, Samuel Coogan, Karen M. Feigh",
     paper:
-      "https://jackkolb.com/pdf/SciTech_24_Impact_of_Abstraction_Levels_of_Context_Information_on_AI_Advised_Decision_Making_for_an_Entry_Descent_and_Landing_Task.pdf",
+      "https://jackkolb.com/pdf/Aviation_24_Run_Time_Assurance_and_Human_AI_Fluency_in_Manned_Autonomous_Intelligence_Surveillance_and_Reconnaissance.pdf",
     tools: "Conference Proceedings of the AIAA Aviation '24",
     time: "2024",
     status: "Complete",
