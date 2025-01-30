@@ -11,7 +11,7 @@ function createTimeline() {
     },
     {
       type: "Symposium",
-      location: "VFS Annual Form",
+      location: "VFS Annual Forum",
       title:
         "Human-AI Interaction in Autonomous Medical Evacuation Helicopters",
       link: "https://jackkolb.com/pdf/VFS_25_Human_AI_Interaction_in_Autonomous_Medical_Evacuation_Helicopters.pdf",
