@@ -68,7 +68,7 @@ function createTimeline() {
       location: "AIAA Aviation",
       title:
         "Run Time Assurance and Human AI Fluency in Manned Autonomous Intelligence Surveillance and Reconnaissance",
-      link: "https://jackkolb.com/pdf/Aviation_24_Run_Time_Assurance_and_Human_AI_Fluency_in_Manned_Autonomous_Intelligence_Surveillance_and_Reconnaissance.pdf",
+      link: "https://jackkolb.com/pdf/AVIATION_24_Run_Time_Assurance_and_Human_AI_Fluency_in_Manned_Autonomous_Intelligence_Surveillance_and_Reconnaissance.pdf",
       month: "Jul",
       year: 2024,
     },

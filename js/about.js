@@ -71,17 +71,6 @@ function loadAbout() {
 	return;
 }
 
-
-function removeAbout() {
-  if (about_active) {
-	document.getElementById("about").style.display = "none";
-	about_active = false;
-	hideBar("about-button");
-  }
-  return;
-}
-
-
 function generateOrgs() {
 	var orgs = document.createElement("div");
 	fetch('json/orgs.json')

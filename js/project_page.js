@@ -20,17 +20,6 @@ function learnMore(project_name) {
   return;
 }
 
-
-function removeProjectPage() {
-  if (projectpage_active) {
-    var element = document.getElementById("project-page");
-    element.parentNode.removeChild(element);
-    projectpage_active = false;
-  }
-  return;
-}
-
-
 function generateProjectPage(project_title="", project_github="none", project_tools="", project_time="", project_status="", project_short="", project_long="", project_images=[]) {
 
   var project = document.createElement("div");

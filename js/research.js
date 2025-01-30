@@ -29,8 +29,7 @@ var researchList = [
     long: "A goal of adaptive automation is to recognize the situational context or user cognitive state to adapt taskwork and interfaces to support team performance. Central to this objective is passive, real-time monitoring of a user's cognitive workload, such that the system can moderate the workload by assuming taskwork in high-workload situations. While prior work has sought to measure cognitive workload from physiological metrics, few studies have approached comprehensive evaluations in realistic domains. In this work, we use a medical evacuation scenario where the subject plays the role of a medical personnel on board a helicopter with an autonomous pilot. The subject has to interact with the pilot, relay information to ground control, and monitor the vitals of a patient. We equip the subject with various sensors (heart rate, respiration rate, and pupillometry) and successfully use classical machine learning models to estimate the cognitive workload state post-hoc. Results show a reasonably high accuracy (F1 of ~0.80) and future work aims to adapt this into a real-time system.",
   },
   {
-    name: "Use of Simulated Mental Models and Active Replanning for Human-Robot
-Interaction",
+    name: "Use of Simulated Mental Models and Active Replanning for Human-Robot Interaction",
     conference: "true",
     authors: "Jiming Ren, Alag Swaminathan, <b>Jack Kolb</b>, Ye Zhao, Sam Coogan, Karen M. Feigh",
     paper:
@@ -226,16 +225,6 @@ function loadResearch() {
   });
 
   document.body.insertBefore(research, document.getElementById("content"));
-  return;
-}
-
-function removeResearch() {
-  if (research_active) {
-    var element = document.getElementById("research");
-    element.parentNode.removeChild(element);
-    hideBar("research-button");
-    research_active = false;
-  }
   return;
 }
 

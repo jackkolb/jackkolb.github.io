@@ -209,16 +209,6 @@ function loadProjects() {
   return;
 }
 
-function removeProjects() {
-  if (projects_active) {
-    var element = document.getElementById("projects");
-    element.parentNode.removeChild(element);
-    hideBar("projects-button");
-    projects_active = false;
-  }
-  return;
-}
-
 function generateProject(
   project_name,
   project_hackathon,
