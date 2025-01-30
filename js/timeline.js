@@ -107,6 +107,16 @@ function createTimeline() {
       year: 2023,
     },
     {
+      type: "School",
+      action: "Completed",
+      location: "Georgia Tech",
+      degree: "Computer Science",
+      level: "MS",
+      link: "https://gatech.edu",
+      month: "May",
+      year: 2023,
+    },
+    {
       type: "Award",
       award: "Awarded a Grant from Amazon Consumer Robotics ($80k)",
       month: "Dec",
