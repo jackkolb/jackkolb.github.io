@@ -1,14 +1,55 @@
 // javascript functions for research tab
 
 var researchList = [
+
+  {
+    name: "Enabling Controllable, Identity Preserving, Non-Rigid Edits in Human-Centric Images",
+    conference: "true",
+    authors: "Nikolai Warner, <b>Jack Kolb</b>, Meera Hahn, Jonathan Huang, Irfan Essa, Vighnesh Birodkar",
+    paper:
+      "https://jackkolb.com/pdf/ICIP_25_Enabling_Controllable_Identity_Preserving_Non_Rigid_Edit_in_Human_Centric_Images.pdf",
+    tools: "Preprint",
+    time: "2025",
+    status: "Complete",
+    short:
+      "We condition diffusion in-painting with text captions from image sequences to enable text-controllable pose edits.",
+    long: "[ABSTRACT] We approach the problem of inserting a person into a novel scene and controlling their pose via text guidance. Given an image of a person, a masked image of a scene, and a text description of the target pose, our model presents realistic images while being highly controllable. We validate the robustness of our model's true-to-text accuracy and identity preservation via a user study on in-the-wild images. In addition, we present a novel dataset containing pairs of frames from human-centric and action-rich videos, with text captions of the difference in human pose between frames. We also explore the challenges of controllable identity preservation for in-the-wild scenes and the failure modes of similar models. Our methods achieve a 10\% increase in pose adherence (PCKt@0.5) over comparable methods without compromising visual fidelity, and show a clear qualitative improvement.",
+  },
+  {
+    name: "Investigating Human-AI Team Fluency in Autonomous Medical Evacuation: A Study of Novice Aviator Cognitive States and HAI Interface Design",
+    conference: "true",
+    authors: "Sanya Doda, Richard Agbeyibor, Carmen Cortes, Jack Kolb, Jose Magalhaes, Karen M. Feigh",
+    paper:
+      "https://jackkolb.com/pdf/AVIATION_25_Investigating_Human_AI_Team_Fluency_in_Autonomous_Medical_Evacuation_A_Study_of_Novice_Aviator_Cognitive_States_and_HAI_Interface_Design.pdf",
+    tools: "Conference Proceedings of AIAA AVIATION '25",
+    time: "2025",
+    status: "Complete",
+    short:
+      "Cognitive workload is estimated from a shared-authority medical evacuation scenario with an autonomous pilot.",
+    long: "A goal of adaptive automation is to recognize the situational context or user cognitive state to adapt taskwork and interfaces to support team performance. Central to this objective is passive, real-time monitoring of a user's cognitive workload, such that the system can moderate the workload by assuming taskwork in high-workload situations. While prior work has sought to measure cognitive workload from physiological metrics, few studies have approached comprehensive evaluations in realistic domains. In this work, we use a medical evacuation scenario where the subject plays the role of a medical personnel on board a helicopter with an autonomous pilot. The subject has to interact with the pilot, relay information to ground control, and monitor the vitals of a patient. We equip the subject with various sensors (heart rate, respiration rate, and pupillometry) and successfully use classical machine learning models to estimate the cognitive workload state post-hoc. Results show a reasonably high accuracy (F1 of ~0.80) and future work aims to adapt this into a real-time system.",
+  },
+  {
+    name: "Use of Simulated Mental Models and Active Replanning for Human-Robot
+Interaction",
+    conference: "true",
+    authors: "Jiming Ren, Alag Swaminathan, <b>Jack Kolb</b>, Ye Zhao, Sam Coogan, Karen M. Feigh",
+    paper:
+      "https://jackkolb.com/pdf/SciTech_25_Use_of_Simulated_Mental_Models_and_Active_Replanning_for_Human_Robot_Interaction.pdf",
+    tools: "Preprint",
+    time: "2025",
+    status: "Complete",
+    short:
+      "We propose a framework for intelligent user updates in multi-agent command & control by estimating the user's belief state.",
+    long: "[ABSTRACT] This paper introduces a communication and planning framework to facilitate efficient state update information between an autonomous robotic system and a human operator under scenarios where continuous robotic monitoring is not available. The framework estimates the operator's mental model and uses the difference between the estimated mental model and the actual world state and robot plans to trigger selective communication updates to the operator. The framework is deployed in a simulation environment where a rapid task planning algorithm adapts robot plans to a dynamic operational environment in real time. The proposed framework aims to improve situational awareness and reduce cognitive load in contrast with baseline methods where communication is triggered by mission milestones, obstacles encountered, or periodically.",
+  },
   {
     name: "Inferring Belief States in Partially-Observable Human-Robot Teams",
     conference: "true",
     authors: "<b>Jack Kolb</b>, Karen M. Feigh",
     paper:
-      "https://jackkolb.com/pdf/IROS_24_Inferring_Belief_States_in_Partially_Observable_Human_Robot_Teams.pdf",
-    tools: "Conference Proceedings of IEEE/RSJ IROS '24",
-    time: "2024",
+      "https://jackkolb.com/pdf/SciTech_25_Use_of_Simulated_Mental_Models_and_Active_Replanning_for_Human_Robot_Interaction.pdf",
+    tools: "Conference Proceedings of AIAA SciTech '25",
+    time: "2025",
     status: "Complete",
     short:
       "Presents an architecture for predicting user responses to situation responses in human-robot teams, evaluated on a modified OvercookedAI domain.",
