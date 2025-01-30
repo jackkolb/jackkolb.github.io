@@ -5,7 +5,7 @@ var researchList = [
   {
     name: "Enabling Controllable, Identity Preserving, Non-Rigid Edits in Human-Centric Images",
     conference: "true",
-    authors: "Nikolai Warner, <b>Jack Kolb</b>, Meera Hahn, Jonathan Huang, Irfan Essa, Vighnesh Birodkar",
+    authors: "N. Warner, <b>J. Kolb</b>, M. Hahn, J. Huang, I. Essa, V. Birodkar",
     paper:
       "https://jackkolb.com/pdf/ICIP_25_Enabling_Controllable_Identity_Preserving_Non_Rigid_Edit_in_Human_Centric_Images.pdf",
     tools: "Preprint",
@@ -18,7 +18,7 @@ var researchList = [
   {
     name: "Investigating Human-AI Team Fluency in Autonomous Medical Evacuation: A Study of Novice Aviator Cognitive States and HAI Interface Design",
     conference: "true",
-    authors: "Sanya Doda, Richard Agbeyibor, Carmen Cortes, Jack Kolb, Jose Magalhaes, Karen M. Feigh",
+    authors: "S. Doda, R. Agbeyibor, C. Cortes, <b>J. Kolb</b>, J. Magalhaes, K. Feigh",
     paper:
       "https://jackkolb.com/pdf/AVIATION_25_Investigating_Human_AI_Team_Fluency_in_Autonomous_Medical_Evacuation_A_Study_of_Novice_Aviator_Cognitive_States_and_HAI_Interface_Design.pdf",
     tools: "Conference Proceedings of AIAA AVIATION '25",
@@ -31,7 +31,7 @@ var researchList = [
   {
     name: "Use of Simulated Mental Models and Active Replanning for Human-Robot Interaction",
     conference: "true",
-    authors: "Jiming Ren, Alag Swaminathan, <b>Jack Kolb</b>, Ye Zhao, Sam Coogan, Karen M. Feigh",
+    authors: "J. Ren, A. Swaminathan, <b>J. Kolb</b>, Y. Zhao, S. Coogan, K. Feigh",
     paper:
       "https://jackkolb.com/pdf/SciTech_25_Use_of_Simulated_Mental_Models_and_Active_Replanning_for_Human_Robot_Interaction.pdf",
     tools: "Preprint",
@@ -44,7 +44,7 @@ var researchList = [
   {
     name: "Inferring Belief States in Partially-Observable Human-Robot Teams",
     conference: "true",
-    authors: "<b>Jack Kolb</b>, Karen M. Feigh",
+    authors: "<b>J. Kolb</b>, K. Feigh",
     paper:
       "https://jackkolb.com/pdf/SciTech_25_Use_of_Simulated_Mental_Models_and_Active_Replanning_for_Human_Robot_Interaction.pdf",
     tools: "Conference Proceedings of AIAA SciTech '25",
@@ -58,7 +58,7 @@ var researchList = [
     name: "Human-AI Collaboration in Autonomous Aerial Vehicles for ISR: Experience, Trust, and Perception",
     conference: "true",
     authors:
-      "Richard Agbeyibor, Vedant Ruia,  <b>Jack Kolb</b>, Karen M. Feigh",
+      "R. Agbeyibor, V. Ruia,  <b>J. Kolb</b>, K. Feigh",
     paper:
       "https://jackkolb.com/pdf/HFES_24_Joint_Intelligence_Surveillance_and_Reconnaissance_Mission_Collaboration_with_Autonomous_Pilots.pdf",
     tools: "Conference Proceedings of HFES ASPIRE '24",
@@ -72,7 +72,7 @@ var researchList = [
     name: "Towards Safe Collaboration Between Autonomous Pilots and Human Crews for Intelligence, Surveillance, and Reconnaissance",
     conference: "true",
     authors:
-      "Richard Agbeyibor, Vedant Ruia,  <b>Jack Kolb</b>, Carmen Cortes, Ty Mancao, Samuel Coogan, Karen M. Feigh",
+      "R. Agbeyibor, V. Ruia,  <b>J. Kolb</b>, C. Cortes, T. Mancao, S. Coogan, K. Feigh",
     paper:
       "https://jackkolb.com/pdf/DASC_24_Towards_Safe_Collaboration_Between_Autonomous_Pilots_and_Human_Crews_for_Intelligence_Surveillance_and_Reconnaissance.pdf",
     tools: "Conference Proceedings of IEEE DASC '24",
@@ -86,7 +86,7 @@ var researchList = [
     name: "Run Time Assurance and Human AI Fluency in Manned Autonomous Intelligence Surveillance and Reconnaissance",
     conference: "true",
     authors:
-      "Richard Agbeyibor, Vedant Ruia, Carmen Cortes, <b>Jack Kolb</b>, Samuel Coogan, Karen M. Feigh",
+      "R. Agbeyibor, V. Ruia, C. Cortes, <b>J. Kolb</b>, S. Coogan, K. Feigh",
     paper:
       "https://jackkolb.com/pdf/Aviation_24_Run_Time_Assurance_and_Human_AI_Fluency_in_Manned_Autonomous_Intelligence_Surveillance_and_Reconnaissance.pdf",
     tools: "Conference Proceedings of the AIAA Aviation '24",
@@ -99,7 +99,7 @@ var researchList = [
   {
     name: "Impact of Abstraction Levels of Context Information on AI-Advised Decision Making for an Entry Descent and Landing Task",
     conference: "true",
-    authors: "Divya Srivastava, <b>Jack Kolb</b>, and Karen M. Feigh",
+    authors: "D. Srivastava, <b>J. Kolb</b>, and K. Feigh",
     paper:
       "https://jackkolb.com/pdf/SciTech_24_Impact_of_Abstraction_Levels_of_Context_Information_on_AI_Advised_Decision_Making_for_an_Entry_Descent_and_Landing_Task.pdf",
     tools: "Conference Proceedings of AIAA SciTech '24",
@@ -113,7 +113,7 @@ var researchList = [
     name: "The Effects of Robot Motion on Comfort Dynamics of Novice Users in Close-Proximity Human-Robot Interactions",
     conference: "true",
     authors:
-      "Pierce Howell, *<b>Jack Kolb</b>, *Yifan Liu, and Harish Ravichandar",
+      "P. Howell, *<b>J. Kolb</b>, *Y. Liu, and H. Ravichandar",
     paper:
       "https://jackkolb.com/pdf/IROS_23_Effects_of_Robot_Motion_on_Comfort_Dynamics_of_Novice_Users_in_Close_Proximity_Human_Robot_Interactions.pdf",
     tools: "Conference Proceedings of IEEE/RSJ IROS '23",
@@ -126,7 +126,7 @@ var researchList = [
   {
     name: "The Effects of Inaccurate Decision-Support Systems on Structured Shared Decision-Making for Human-Robot Teams",
     conference: "true",
-    authors: "*<b>Jack Kolb</b>, *Divya Srivastava, Karen M. Feigh",
+    authors: "*<b>J. Kolb</b>, *D. Srivastava, K. Feigh",
     paper:
       "https://jackkolb.com/pdf/ROMAN_23_Structuring_Shared_Decision_Making_in_Human_Robot_Teams.pdf",
     tools: "Conference Proceedings of IEEE RO-MAN '23",
@@ -134,12 +134,12 @@ var researchList = [
     status: "Complete",
     short:
       "Explores the impact of the type of robot recommendation error on mission performance in a structured shared decision-making domain.",
-    long: "[ABSTRACT] Human-robot teams can leverage a human's expertise and a robot's computational power to meaningfully improve mission outcomes. In command and control domains, the robot teammate can also act as a decision-support system to advise human users. However, decision-support systems are susceptible to human factors issues including miscalibrated trust and degraded team performance. Recent work has mitigated these issues by using cognitive forcing functions to structure shared decision-making systems and place users as proactive on-the-loop actors. We bring this approach to a human-robot teaming domain, and investigate how Type I and Type II errors in the robot's recommendation affects team performance and user rational trust. We present the architecture of our decision-making process and a Mars rover landing experiment domain. Results from a comprehensive user study demonstrate that the error type of the robot's recommendation forms a trade-off between team performance and rational trust.",
+    long: "[ABSTRACT] Human-robot teams can leverage a human's expertise and a robot's computational power to meaningfully improve mission outcomes. In command and control domains, the robot teammate can also act as a decision-support system to advise human users. However, decision-support systems are susceptible to human factors issues including miscalibrated trust and degraded team performance. Recent work has mitigated these issues by using cognitive forcing functions to structure shared decision-making systems and place users as proactive on-the-loop actors. We bring this approach to a human-robot teaming domain, and investigate how T.pe I and T.pe II errors in the robot's recommendation affects team performance and user rational trust. We present the architecture of our decision-making process and a Mars rover landing experiment domain. Results from a comprehensive user study demonstrate that the error type of the robot's recommendation forms a trade-off between team performance and rational trust.",
   },
   {
     name: "Leveraging Cognitive States in Human-Robot Teaming",
     conference: "true",
-    authors: "<b>Jack Kolb</b>, Harish Ravichandar, and Sonia Chernova",
+    authors: "<b>J. Kolb</b>, H. Ravichandar, and S. Chernova",
     paper:
       "https://jackkolb.com/pdf/ROMAN_22_Leveraging_Cognitive_States_in_Human_Robot_Teaming.pdf",
     github:
@@ -155,7 +155,7 @@ var researchList = [
   {
     name: "Safe Dexterous Manipulation Using Geometric Boundary Constraints",
     workshop: "true",
-    authors: "Abhineet Jain, <b>Jack Kolb</b>, and Harish Ravichandar",
+    authors: "A. Jain, <b>J. Kolb</b>, and H. Ravichandar",
     paper:
       "https://jackkolb.com/pdf/IJCAI_22_Constrained_RL_for_Dexterous_Manipulation.pdf",
     tools: "Workshop Proceedings of IJCAI '22 (Safe RL, non-archival)",
@@ -168,7 +168,7 @@ var researchList = [
   {
     name: "Evaluating the Effectiveness of Corrective Demonstrations and a Low-Cost Sensor for Dexterous Manipulation",
     authors:
-      "*Abhineet Jain, *<b>Jack Kolb</b>, J.M. Abbess IV, and Harish Ravichandar",
+      "*A. Jain, *<b>J. Kolb</b>, J. Abbess, and H. Ravichandar",
     paper: "https://arxiv.org/pdf/2204.07631.pdf",
     github:
       "https://github.com/GT-STAR-Lab/corrective-demos-dexterous-manipulation",
@@ -183,7 +183,7 @@ var researchList = [
   {
     name: "Predicting Individual Human Performance in Human-Robot Teaming",
     authors:
-      "<b>Jack Kolb</b>, Mayank Kishore, Kenneth Shaw, Harish Ravichandar, and Sonia Chernova",
+      "<b>J. Kolb</b>, M. Kishore, K. Shaw, H. Ravichandar, and S. Chernova",
     paper:
       "https://jackkolb.com/pdf/ROMAN_21_Predicting_Individual_Performance_in_Human_Robot_Teaming.pdf",
     conference: "true",
