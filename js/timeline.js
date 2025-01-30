@@ -2,6 +2,33 @@ function createTimeline() {
   timeline = [
     {
       type: "Conference",
+      location: "AIAA AVIATION",
+      title:
+        "Investigating Human-AI Team Fluency in Autonomous Medical Evacuation: A Study of Novice Aviator Cognitive States and HAI Interface Design",
+      link: "https://jackkolb.com/pdf/AVIATION_25_Investigating_Human_AI_Team_Fluency_in_Autonomous_Medical_Evacuation_A_Study_of_Novice_Aviator_Cognitive_States_and_HAI_Interface_Design.pdf",
+      month: "Jul",
+      year: 2025,
+    },
+    {
+      type: "Symposium",
+      location: "VFS Annual Form",
+      title:
+        "Human-AI Interaction in Autonomous Medical Evacuation Helicopters",
+      link: "https://jackkolb.com/pdf/VFS_25_Human_AI_Interaction_in_Autonomous_Medical_Evacuation_Helicopters.pdf",
+      month: "May",
+      year: 2025,
+    },
+    {
+      type: "Conference",
+      location: "AIAA SciTech",
+      title:
+        "Use of Simulated Mental Models and Active Replanning for Human-Robot Interaction",
+      link: "https://jackkolb.com/pdf/SciTech_25_Use_of_Simulated_Mental_Models_and_Active_Replanning_for_Human_Robot_Interaction.pdf",
+      month: "Jan",
+      year: 2025,
+    },
+    {
+      type: "Conference",
       location: "IEEE/RSJ IROS",
       title:
         "Inferring Belief States in Partially-Observable Human-Robot Teams",
