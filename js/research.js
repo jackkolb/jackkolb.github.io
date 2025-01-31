@@ -46,8 +46,8 @@ var researchList = [
     conference: "true",
     authors: "<b>J. Kolb</b>, K. Feigh",
     paper:
-      "https://jackkolb.com/pdf/SciTech_25_Use_of_Simulated_Mental_Models_and_Active_Replanning_for_Human_Robot_Interaction.pdf",
-    tools: "Conference Proceedings of AIAA SciTech '25",
+      "https://jackkolb.com/pdf/IROS_24_Inferring_Belief_States_in_Partially_Observable_Human_Robot_Teams.pdf",
+    tools: "Conference Proceedings of IEEE/RSJ IROS '24",
     time: "2025",
     status: "Complete",
     short:
@@ -55,7 +55,7 @@ var researchList = [
     long: "[ABSTRACT] We investigate the real-time estimation of human situation awareness using observations from a robot teammate with limited visibility. In human factors and human-autonomy teaming, it is recognized that individuals navigate their environments using an internal mental simulation, or \textit{mental model}. The mental model informs cognitive processes including situation awareness, contextual reasoning, and task planning. In teaming domains, the mental model includes a \textit{team model} of each teammate's beliefs and capabilities, enabling fluent teamwork without the need for explicit communication. However, little work has applied team models to human-robot teaming. In this work we compare the performance of two models, logical predicates and large language models, at estimating user situation awareness over varying visibility conditions. Our results indicate that the methods are largely resilient to low-visibility conditions in our domain, however opportunities exist to improve their overall performance.",
   },
   {
-    name: "Human-AI Collaboration in Autonomous Aerial Vehicles for ISR: Experience, Trust, and Perception",
+    name: "Joint Intelligence, Surveillance, and Reconnaissance Mission Collaboration with Autonomous Pilots",
     conference: "true",
     authors:
       "R. Agbeyibor, V. Ruia,  <b>J. Kolb</b>, K. Feigh",
@@ -64,9 +64,8 @@ var researchList = [
     tools: "Conference Proceedings of HFES ASPIRE '24",
     time: "2024",
     status: "Complete",
-    short:
-      "Users participate in a simulated ISR domain with an autonomous pilot, and provide feedback on several modes of autonomy we presented them with.",
-    long: "[ABSTRACT] AI-advised Decision Making is a form of human-autonomy teaming in which an AI recommender system suggests a solution to a human operator, who is responsible for the final decision. This work seeks to empower and effectively utilize these human decision makers by supporting their cognitive process of judgement. Previous work has found that providing decision makers with relevant information that the AI uses to generate possible courses of action improves crucial team decision-making metrics, and is a viable alternative solution to explaining or interpreting complex AI models. This paper investigates whether this technique and its observed benefits hold when the relevant information provided to the decision maker is displayed at different levels of abstraction. Findings indicate that this technique of supporting the human’s judgement process is effective in (1) boosting the human decision maker’s situation awareness and task performance, (2) calibrating their trust in AI teammates, and (3) reducing over-reliance on an AI partner, irrespective of the abstraction level at which information was displayed.",
+    short: "Users participate in a simulated ISR domain with an autonomous pilot, and provide feedback on several modes of autonomy we presented them with.",
+    long: "[ABSTRACT] This study explores human-autonomy collaboration between a future autonomous pilot and a human crew member pursuing a joint Intelligence, Surveillance, and Reconnaissance (ISR) mission. We introduce a novel open-sourced autonomous ISR interaction domain simulating real-world scenarios. As aviation increasingly integrates autonomy, our focus lies in understanding how various autonomous capabilities and interface features affect trust, perception, and user interactions. Conducting an exploratory study with 27 participants in a flight simulator, we examine the impact of various autonomy modes on human-autonomy interaction. Through demographic analysis, interface usage, and qualitative responses, we explore the impact of experience, expertise, and authority on collaboration dynamics.",
   },
   {
     name: "Towards Safe Collaboration Between Autonomous Pilots and Human Crews for Intelligence, Surveillance, and Reconnaissance",
@@ -80,7 +79,7 @@ var researchList = [
     status: "Complete",
     short:
       "Control barrier functions are used to control an autonomous pilot of an ISR aircraft with a human teammate.",
-    long: "[ABSTRACT] AI-advised Decision Making is a form of human-autonomy teaming in which an AI recommender system suggests a solution to a human operator, who is responsible for the final decision. This work seeks to empower and effectively utilize these human decision makers by supporting their cognitive process of judgement. Previous work has found that providing decision makers with relevant information that the AI uses to generate possible courses of action improves crucial team decision-making metrics, and is a viable alternative solution to explaining or interpreting complex AI models. This paper investigates whether this technique and its observed benefits hold when the relevant information provided to the decision maker is displayed at different levels of abstraction. Findings indicate that this technique of supporting the human’s judgement process is effective in (1) boosting the human decision maker’s situation awareness and task performance, (2) calibrating their trust in AI teammates, and (3) reducing over-reliance on an AI partner, irrespective of the abstraction level at which information was displayed.",
+    long: "[ABSTRACT] Many aviation missions today are accomplished by a heterogeneous crew of pilots and mission specialists. As fully Automated Pilots (AP) are integrated into aviation crews, effective teaming will be necessary for safety assurance and mission effectiveness. This flight simulator study explored teaming between a non-pilot human operator and an AP collaborating on a maritime Intelligence, Surveillance, and Reconnaissance (ISR) mission. The study compared a \textit{Waypoint} AP behavior, requiring human intervention in aircraft control to prevent overflight of damage-causing enemy ships, with a \textit{Collision Avoidance} behavior where the AP proactively avoids enemy ships using control barrier functions. This proactive AP behavior resulted in less aircraft damage and more predictable team performance, albeit longer mission times. Results indicate that situation awareness varied  with AP complexity level and task load level. Participants perceived positively the AP when it succeeded and calibrated their trust when it failed.",
   },
   {
     name: "Run Time Assurance and Human AI Fluency in Manned Autonomous Intelligence Surveillance and Reconnaissance",
@@ -93,8 +92,8 @@ var researchList = [
     time: "2024",
     status: "Complete",
     short:
-      "Users participate in a simulated ISR domain with an autonomous pilot, we evaluate the team's mission performance and team fluency across several operational modes.",
-    long: "[ABSTRACT] AI-advised Decision Making is a form of human-autonomy teaming in which an AI recommender system suggests a solution to a human operator, who is responsible for the final decision. This work seeks to empower and effectively utilize these human decision makers by supporting their cognitive process of judgement. Previous work has found that providing decision makers with relevant information that the AI uses to generate possible courses of action improves crucial team decision-making metrics, and is a viable alternative solution to explaining or interpreting complex AI models. This paper investigates whether this technique and its observed benefits hold when the relevant information provided to the decision maker is displayed at different levels of abstraction. Findings indicate that this technique of supporting the human’s judgement process is effective in (1) boosting the human decision maker’s situation awareness and task performance, (2) calibrating their trust in AI teammates, and (3) reducing over-reliance on an AI partner, irrespective of the abstraction level at which information was displayed.",
+      "Users participate in a simulated ISR domain with an autonomous pilot, we evaluate the team's mission performance and fluency across several operational modes.",
+    long: "[ABSTRACT] The maturation of autonomy for electric vertical take-off and landing aircraft will soon make it possible to execute military intelligence, surveillance, reconnaissance (ISR) missions aboard crewed autonomous aerial vehicles. This research experimentally investigates factors that may influence the quality of interaction (i.e., team fluency) between a non-pilot human operator and the AI pilot responsible for autonomous flight, aboard a minimally crewed aircraft.  In a flight simulator study with twenty-seven participants, various levels of workload and AI pilot capabilities are investigated including run time assurance through control barrier functions (CBFs). CBFs are used to enable pro-active collision avoidance behaviors by the AI pilot. Team fluency and mission effectiveness outcomes through trust, situation awareness, workload, interaction and performance show that task complexity and AI behavior are significant factors for the quality of human AI interaction in the autonomous ISR context.",
   },
   {
     name: "Impact of Abstraction Levels of Context Information on AI-Advised Decision Making for an Entry Descent and Landing Task",
@@ -145,7 +144,7 @@ var researchList = [
     github:
       "https://github.com/GT-RAIL/cognitive-states-in-human-robot-teaming",
     tools:
-      "Conference Proceedings of IEEE RO-MAN '22, <b>[Best Student Paper Finalist, 3/237, 1.2%]</b>",
+      "Conference Proceedings of IEEE RO-MAN '22, <b>[Best Student Paper Finalist, 3/237]</b>",
     time: "2022",
     status: "Complete",
     short:
@@ -191,7 +190,7 @@ var researchList = [
     time: "2021",
     status: "Complete",
     short:
-      "Through a user study we find that scores from user cognitive skill tests can correlate to performance at robot teleoperation tasks.",
+      "Through a user study we find that scores from user cognitive skill tests correlate to performance at robot teleoperation tasks.",
     long: "[ABSTRACT] Coordinating human-robot teams requires careful planning and allocation of tasks to the most appropriate agents.  This challenge is exacerbated by the fact that, unlike their robot teammates, humans exhibit significant variation in their abilities. Existing work largely ignores this variation in favor of simpler aggregate models, failing to leverage specialized capabilities of different individuals. In this work, we introduce simple cognitive tests for measuring inherent variations in human capabilities related to human-robot teaming, specifically, the ability to maintain situational awareness and to mentally model latent network structures.  We then demonstrate that user study participant performance on these cognitive tests is correlated with, and thus is a predictor for, their performance on human-robot teaming tasks. These findings have the potential to improve human-robot teaming algorithms (e.g., task allocation) by providing a mechanism to better leverage individual differences in human agents.",
   },
 ];
