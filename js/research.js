@@ -87,7 +87,7 @@ var researchList = [
     authors:
       "R. Agbeyibor, V. Ruia, C. Cortes, <b>J. Kolb</b>, S. Coogan, K. Feigh",
     paper:
-      "https://jackkolb.com/pdf/Aviation_24_Run_Time_Assurance_and_Human_AI_Fluency_in_Manned_Autonomous_Intelligence_Surveillance_and_Reconnaissance.pdf",
+      "https://jackkolb.com/pdf/AVIATION_24_Run_Time_Assurance_and_Human_AI_Fluency_in_Manned_Autonomous_Intelligence_Surveillance_and_Reconnaissance.pdf",
     tools: "Conference Proceedings of the AIAA Aviation '24",
     time: "2024",
     status: "Complete",
