@@ -172,7 +172,7 @@ var researchList = [
     github:
       "https://github.com/GT-STAR-Lab/corrective-demos-dexterous-manipulation",
     workshop: "true",
-    tools: "Workshop Proceedings of IEEE/ACM HRI '21 (MLHRC, non-archival)",
+    tools: "Workshop Proceedings of IEEE/ACM HRI '22 (MLHRC, non-archival)",
     time: "2022",
     status: "Complete",
     short:
