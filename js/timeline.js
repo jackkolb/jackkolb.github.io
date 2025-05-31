@@ -2,30 +2,45 @@ function createTimeline() {
   timeline = [
     {
       type: "Conference",
-      location: "AIAA AVIATION",
+      location: "IEEE ICIP",
       title:
-        "Investigating Human-AI Team Fluency in Autonomous Medical Evacuation: A Study of Novice Aviator Cognitive States and HAI Interface Design",
-      link: "https://jackkolb.com/pdf/AVIATION_25_Investigating_Human_AI_Team_Fluency_in_Autonomous_Medical_Evacuation_A_Study_of_Novice_Aviator_Cognitive_States_and_HAI_Interface_Design.pdf",
-      month: "Jul",
+        "Enabling Controllable, Identity Preserving, Non-Rigid Edits in Human-Centric Images",
+      link: "https://jackkolb.com/pdf/ICIP_25_Enabling_Controllable_Identity_Preserving_Non_Rigid_Edit_in_Human_Centric_Images.pdf",
+      month: "Sep",
       year: 2025,
     },
     {
-      type: "Symposium",
-      location: "VFS Annual Forum",
-      title:
-        "Human-AI Interaction in Autonomous Medical Evacuation Helicopters",
-      link: "https://jackkolb.com/pdf/VFS_25_Human_AI_Interaction_in_Autonomous_Medical_Evacuation_Helicopters.pdf",
+      type: "Work",
+      action: "Started working",
+      location: "Apple",
+      link: "https://apple.com",
+      month: "Jun",
+      year: 2025,
+    },
+    {
+      type: "School",
+      action: "Completed",
+      location: "Georgia Tech",
+      degree: "Robotics",
+      level: "PhD",
+      link: "https://robotics.gatech.edu",
       month: "May",
       year: 2025,
     },
     {
-      type: "Conference",
-      location: "AIAA SciTech",
-      title:
-        "Use of Simulated Mental Models and Active Replanning for Human-Robot Interaction",
-      link: "https://jackkolb.com/pdf/SciTech_25_Use_of_Simulated_Mental_Models_and_Active_Replanning_for_Human_Robot_Interaction.pdf",
-      month: "Jan",
+      type: "Award",
+      award: "Successfully passed my PhD Defense!",
+      link: "https://jackkolb.com/pdf/Kolb_Defense_Presentation.pdf",
+      month: "Mar",
       year: 2025,
+    },
+    {
+      type: "Work",
+      action: "Interned",
+      location: "Travelers",
+      link: "https://travelers.com",
+      month: "May",
+      year: 2022,
     },
     {
       type: "Conference",
@@ -64,28 +79,10 @@ function createTimeline() {
       year: 2024,
     },
     {
-      type: "Conference",
-      location: "AIAA Aviation",
-      title:
-        "Run Time Assurance and Human AI Fluency in Manned Autonomous Intelligence Surveillance and Reconnaissance",
-      link: "https://jackkolb.com/pdf/AVIATION_24_Run_Time_Assurance_and_Human_AI_Fluency_in_Manned_Autonomous_Intelligence_Surveillance_and_Reconnaissance.pdf",
-      month: "Jul",
-      year: 2024,
-    },
-    {
       type: "Award",
       award: "Successfully passed my PhD Proposal!",
       link: "https://jackkolb.com/pdf/Kolb_Proposal_Presentation.pdf",
       month: "Feb",
-      year: 2024,
-    },
-    {
-      type: "Conference",
-      location: "AIAA SciTech",
-      title:
-        "Impact of Abstraction Levels of Context Information on AI-Advised Decision Making for an Entry Descent and Landing Task",
-      link: "https://jackkolb.com/pdf/SciTech_24_Impact_of_Abstraction_Levels_of_Context_Information_on_AI_Advised_Decision_Making_for_an_Entry_Descent_and_Landing_Task.pdf",
-      month: "Jan",
       year: 2024,
     },
     {

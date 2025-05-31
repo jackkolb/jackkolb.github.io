@@ -1,7 +1,6 @@
 // javascript functions for research tab
 
 var researchList = [
-
   {
     name: "Enabling Controllable, Identity Preserving, Non-Rigid Edits in Human-Centric Images",
     conference: "true",
@@ -9,6 +8,19 @@ var researchList = [
     paper:
       "https://jackkolb.com/pdf/ICIP_25_Enabling_Controllable_Identity_Preserving_Non_Rigid_Edit_in_Human_Centric_Images.pdf",
     tools: "Preprint",
+    time: "2025",
+    status: "Complete",
+    short:
+      "We condition diffusion in-painting with text captions from image sequences to enable text-controllable pose edits.",
+    long: "[ABSTRACT] We approach the problem of inserting a person into a novel scene and controlling their pose via text guidance. Given an image of a person, a masked image of a scene, and a text description of the target pose, our model presents realistic images while being highly controllable. We validate the robustness of our model's true-to-text accuracy and identity preservation via a user study on in-the-wild images. In addition, we present a novel dataset containing pairs of frames from human-centric and action-rich videos, with text captions of the difference in human pose between frames. We also explore the challenges of controllable identity preservation for in-the-wild scenes and the failure modes of similar models. Our methods achieve a 10\% increase in pose adherence (PCKt@0.5) over comparable methods without compromising visual fidelity, and show a clear qualitative improvement.",
+  },
+  {
+    name: "Enabling Controllable, Identity Preserving, Non-Rigid Edits in Human-Centric Images",
+    conference: "true",
+    authors: "N. Warner, <b>J. Kolb</b>, M. Hahn, J. Huang, I. Essa, V. Birodkar",
+    paper:
+      "https://jackkolb.com/pdf/ICIP_25_Enabling_Controllable_Identity_Preserving_Non_Rigid_Edit_in_Human_Centric_Images.pdf",
+    tools: "Conference Proceedings of IEEE ICIP '25",
     time: "2025",
     status: "Complete",
     short:
