@@ -295,7 +295,7 @@ function generateResearch(
   preSpace2.className = "big-space";
 
   var newResearchEntryDescription = document.createElement("div");
-  newResearchEntryDescription.className = "research-entry-desc";
+  newResearchEntryDescription.className = "project-entry-desc";
   newResearchEntryDescription.innerHTML = research_description;
 
   var moreLink = document.createElement("button");
