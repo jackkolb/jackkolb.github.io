@@ -68,6 +68,7 @@ function hideBar(name) {
 }
 
 function switchColorMode() {
+	let whiteTextColor = "whitesmoke"
 	if (!(document.getElementById("about-button").classList.contains("dark"))) {
 		document.body.classList.add('dark-body');
 
@@ -75,28 +76,29 @@ function switchColorMode() {
 
 		document.getElementById("name-title").classList.add('dark');
 		document.getElementById("welcome-title").classList.add('dark');
-		document.getElementById("github-icon").setAttribute("fill", "whitesmoke");
+		document.getElementById("github-icon").setAttribute("fill", whiteTextColor);
 
 		icons = document.getElementsByClassName("project-github-icon");
 		for (i=0; i<icons.length-1; i++) {
-			icons[i].setAttribute("fill", "whitesmoke");
+			icons[i].setAttribute("fill", whiteTextColor);
 		}
 
 		icons = document.getElementsByClassName("project-paper-icon");
 		for (i=0; i<icons.length-1; i++) {
-			icons[i].setAttribute("fill", "whitesmoke");
+			icons[i].setAttribute("fill", whiteTextColor);
 		}
 		
 		descs = document.getElementsByClassName("project-entry-desc");
 		for (i=0; i<descs.length-1; i++) {
-			descs[i].setAttribute("fill", "whitesmoke");
+			descs[i].setAttribute("style", "color: " + whiteTextColor);
 		}
 
 		document.getElementById("about-button").classList.add('dark');
 		document.getElementById("projects-button").classList.add('dark');
 		document.getElementById("research-button").classList.add('dark');
 		document.getElementById("cv-button").classList.add('dark');
-		
+
+		document.getElementById("apple-text").setAttribute("style", "color: white");
 	}
 	else {
 		document.body.classList.remove('dark-body');
@@ -114,12 +116,14 @@ function switchColorMode() {
 
 		descs = document.getElementsByClassName("project-entry-desc");
 		for (i=0; i<descs.length-1; i++) {
-			descs[i].setAttribute("fill", "#253f3f");
+			descs[i].setAttribute("style", "color: #253f3f");
 		}
 
 		document.getElementById("about-button").classList.remove('dark');
 		document.getElementById("projects-button").classList.remove('dark');
 		document.getElementById("research-button").classList.remove('dark');
 		document.getElementById("cv-button").classList.remove('dark');
+
+		document.getElementById("apple-text").setAttribute("style", "color: #000000");
 	}
 }

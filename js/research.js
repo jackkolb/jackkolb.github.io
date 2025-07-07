@@ -2,17 +2,17 @@
 
 var researchList = [
   {
-    name: "Enabling Controllable, Identity Preserving, Non-Rigid Edits in Human-Centric Images",
+    name: "Model Cards for AI Teammates: Comparing Human-AI Team Familiarization Methods for High-Stakes Environments",
     conference: "true",
-    authors: "N. Warner, <b>J. Kolb</b>, M. Hahn, J. Huang, I. Essa, V. Birodkar",
+    authors: "R. Bowers, R. Agbeyibor, <b>J. Kolb</b>, K. Feigh",
     paper:
-      "https://jackkolb.com/pdf/ICIP_25_Enabling_Controllable_Identity_Preserving_Non_Rigid_Edit_in_Human_Centric_Images.pdf",
-    tools: "Preprint",
+      "https://jackkolb.com/pdf/ROMAN_25_Model_Cards_for_AI_Teammates_Comparing_Human_AI_Team_Familiarization_Methods_for_High_Stakes_Environments.pdf",
+    tools: "Conference Proceedings of IEEE RO-MAN '25",
     time: "2025",
     status: "Complete",
     short:
-      "We condition diffusion in-painting with text captions from image sequences to enable text-controllable pose edits.",
-    long: "[ABSTRACT] We approach the problem of inserting a person into a novel scene and controlling their pose via text guidance. Given an image of a person, a masked image of a scene, and a text description of the target pose, our model presents realistic images while being highly controllable. We validate the robustness of our model's true-to-text accuracy and identity preservation via a user study on in-the-wild images. In addition, we present a novel dataset containing pairs of frames from human-centric and action-rich videos, with text captions of the difference in human pose between frames. We also explore the challenges of controllable identity preservation for in-the-wild scenes and the failure modes of similar models. Our methods achieve a 10\% increase in pose adherence (PCKt@0.5) over comparable methods without compromising visual fidelity, and show a clear qualitative improvement.",
+      "We explore methods for familiarizing users to an autonomous wingmen and their effect on team performance and human factors.",
+    long: "[ABSTRACT] We compare three methods of familiarizing a human with an artificial intelligence (AI) teammate (\"agent\") prior to operation in a collaborative, fast-paced intelligence, surveillance, and reconnaissance (ISR) environment. In a between-subjects user study (n=60), participants either read documentation about the agent, trained alongside the agent prior to the mission, or were given no familiarization. Results showed that the most valuable information about the agent included details of its decision-making algorithms and its relative strengths and weaknesses compared to the human. This information allowed the familiarization groups to form sophisticated team strategies more quickly than the control group. Documentation-based familiarization led to the fastest adoption of these strategies, but also biased participants towards risk-averse behavior that prevented high scores. Participants familiarized through direct interaction were able to infer much of the same information through observation, and were more willing to take risks and experiment with different control modes, but reported weaker understanding of the agent's internal processes. Significant differences were seen between individual participants' risk tolerance and methods of AI interaction, which should be considered when designing human-AI control interfaces. Based on our findings, we recommend a human-AI team familiarization method that combines AI documentation, structured in-situ training, and exploratory interaction.",
   },
   {
     name: "Enabling Controllable, Identity Preserving, Non-Rigid Edits in Human-Centric Images",

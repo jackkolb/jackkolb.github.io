@@ -2,6 +2,15 @@ function createTimeline() {
   timeline = [
     {
       type: "Conference",
+      location: "IEEE RO-MAN",
+      title:
+        "Model Cards for AI Teammates: Comparing Human-AI Team Familiarization Methods for High-Stakes Environments",
+      link: "https://jackkolb.com/pdf/ROMAN_25_Model_Cards_for_AI_Teammates_Comparing_Human_AI_Team_Familiarization_Methods_for_High_Stakes_Environments.pdf",
+      month: "Aug",
+      year: 2025,
+    },
+    {
+      type: "Conference",
       location: "IEEE ICIP",
       title:
         "Enabling Controllable, Identity Preserving, Non-Rigid Edits in Human-Centric Images",
