@@ -158,6 +158,7 @@ used_photos = [];
 
 function changeWelcomePhoto() {
   photos = [
+    "img/portraits/phd.png",
     "img/portraits/acm.png",
     "img/portraits/big_sur.png",
     "img/portraits/cherries.png",
