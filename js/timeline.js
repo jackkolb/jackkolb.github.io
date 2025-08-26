@@ -19,6 +19,15 @@ function createTimeline() {
       year: 2025,
     },
     {
+      type: "Journal",
+      location: "RA-L",
+      title:
+        "Attention-Tunable Safety Barriers for Human-Autonomy Teaming in Specialized Aviation Missions",
+      link: "https://jackkolb.com/pdf/RAL_25_Attention_Tunable_Safety_Barriers_for_Human_Autonomy_Teaming_in_Specialized_Aviation_Missions.pdf",
+      month: "Aug",
+      year: 2025,
+    },
+    {
       type: "Work",
       action: "Started working",
       location: "Apple",
