@@ -16,7 +16,6 @@ function handleAbout() {
 		let style = document.createElement("style")
 		let color = computedStyle.getPropertyValue('color')
 		let backgroundColor = computedStyle.getPropertyValue('background-color')
-		console.log("color: " + color + ", background-color: " + backgroundColor);
 		styleText = document.createTextNode("#" + element.id + ":hover { background-color: " + color + "; color: white; padding: 0 .5rem 0 .5rem; };")
         style.appendChild(styleText)
 		element.appendChild(style)
