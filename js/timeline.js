@@ -58,7 +58,7 @@ function createTimeline() {
       location: "Travelers",
       link: "https://travelers.com",
       month: "May",
-      year: 2022,
+      year: 2025,
     },
     {
       type: "Conference",
