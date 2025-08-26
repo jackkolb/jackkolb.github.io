@@ -263,7 +263,7 @@ function createTimeline() {
         timeline[i].month +
         "'" +
         (timeline[i].year % 2000) +
-        "</i>&emsp;Conference Publication at " +
+        "</i>&emsp;" + timeline[i].type + " Publication at " +
         timeline[i].location +
         " " +
         timeline[i].year;
