@@ -59,6 +59,7 @@ function showBar(name) {
 		color = "#f4c15a";
 	}
 	document.getElementById(name).setAttribute("style", "margin: 10px; border-bottom: 3px solid " + color);
+	setColorMode(mode)  // hijack this function to set the color mode
 	return;
 }
 
@@ -67,9 +68,9 @@ function hideBar(name) {
 	return;
 }
 
-function switchColorMode() {
+function setColorMode(mode) {
 	let whiteTextColor = "whitesmoke"
-	if (!(document.getElementById("about-button").classList.contains("dark"))) {
+	if (mode == "dark") {
 		document.body.classList.add('dark-body');
 
 		document.getElementById("content").classList.add('dark');

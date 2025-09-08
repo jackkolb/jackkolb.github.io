@@ -26,7 +26,8 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-FQBR3RM2FV');
+        gtag('config', 'G-FQBR3RM2FV')
+        var mode = "light"
     </script>
 
     <body>
@@ -35,7 +36,7 @@
         <div id="title"></div>
 
         <div id="home" class="main">
-            <div id="name-title" class="name-title" onclick="switchColorMode()">
+            <div id="name-title" class="name-title" onclick="mode = mode == 'light' ? 'dark' : 'light'; setColorMode()">
                 Jack Kolb
             </div>
             <div id="welcome-title" class="welcome-title">

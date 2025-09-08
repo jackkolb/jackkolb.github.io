@@ -35,7 +35,7 @@ function generateHome() {
   name.className = "name-title";
   name.id = "name-title";
   name.innerHTML = "Jack Kolb";
-  name.setAttribute("onclick", "switchColorMode()");
+  name.setAttribute("onclick", "setColorMode()");
 
   var welcome = document.createElement("div");
   welcome.className = "welcome-title";
@@ -158,7 +158,7 @@ used_photos = [];
 
 function changeWelcomePhoto() {
   photos = [
-    "img/portraits/phd.png",
+    "img/portraits/phd.jpg",
     "img/portraits/acm.png",
     "img/portraits/big_sur.png",
     "img/portraits/cherries.png",
