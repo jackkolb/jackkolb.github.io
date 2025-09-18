@@ -2,6 +2,19 @@
 
 var researchList = [
   {
+    name: "Predicting World Belief States in Dynamic Real-World Environments",
+    conference: "true",
+    authors: "<b>J. Kolb</b>, A. Garg, N. Warner, K. Feigh",
+    paper:
+      "https://jackkolb.com/pdf/RAL_25_Predicting_World_Belief_States_in_Dynamic_Real_World_Environments.pdf",
+    tools: "Preprint",
+    time: "2025",
+    status: "Complete",
+    short:
+      "We explore how a robot can infer the belief state of a human in an environment through theory of mind capabilities.",
+    long: "We investigate estimating a human's world belief state using a robot's observations in a dynamic, 3D, and partially observable environment. The methods are grounded in mental model theory, which posits that human decision making, contextual reasoning, situation awareness, and behavior planning draw from an internal simulation or world belief state. When in teams, the mental model also includes a team model of each teammate's beliefs and capabilities, enabling fluent teamwork without the need for constant and explicit communication. In this work we replicate a core component of the team model by inferring a teammate's belief state, or level one situation awareness, as a human-robot team navigates a household environment. We evaluate our methods in a realistic simulation, extend to a real-world robot platform, and demonstrate a downstream application of the belief state through an active assistance semantic reasoning task.",
+  },
+  {
     name: "Model Cards for AI Teammates: Comparing Human-AI Team Familiarization Methods for High-Stakes Environments",
     conference: "true",
     authors: "R. Bowers, R. Agbeyibor, <b>J. Kolb</b>, K. Feigh",
