@@ -1,18 +1,15 @@
 // utility functions
 
-
 function removeAll() {
 	removeResearch();
 	removeProjects();
-	removeProjectPage();
 	removeAbout();
 	return;
 }
 
 function removeResearch() {
 	if (research_active) {
-		var element = document.getElementById("research");
-		element.parentNode.removeChild(element);
+		document.getElementById("research").style.display = "none";
 		hideBar("research-button");
 		research_active = false;
 	}
@@ -21,30 +18,20 @@ function removeResearch() {
 
 function removeProjects() {
 	if (projects_active) {
-		var element = document.getElementById("projects");
-		element.parentNode.removeChild(element);
+		document.getElementById("projects").style.display = "none";
 		hideBar("projects-button");
 		projects_active = false;
 	}
 	return;
 }
 
-function removeProjectPage() {
-	if (projectpage_active) {
-		var element = document.getElementById("project-page");
-		element.parentNode.removeChild(element);
-		projectpage_active = false;
+function removeAbout() {
+	if (about_active) {
+		document.getElementById("about").style.display = "none";
+		about_active = false;
+		hideBar("about-button");
 	}
 	return;
-}
-
-function removeAbout() {
-    if (about_active) {
-        document.getElementById("about").style.display = "none";
-        about_active = false;
-        hideBar("about-button");
-    }
-    return;
 }
 
 function showBar(name) {
@@ -80,17 +67,17 @@ function setColorMode(mode) {
 		document.getElementById("github-icon").setAttribute("fill", whiteTextColor);
 
 		icons = document.getElementsByClassName("project-github-icon");
-		for (i=0; i<icons.length-1; i++) {
+		for (i=0; i<icons.length; i++) {
 			icons[i].setAttribute("fill", whiteTextColor);
 		}
 
 		icons = document.getElementsByClassName("project-paper-icon");
-		for (i=0; i<icons.length-1; i++) {
+		for (i=0; i<icons.length; i++) {
 			icons[i].setAttribute("fill", whiteTextColor);
 		}
-		
+
 		descs = document.getElementsByClassName("project-entry-desc");
-		for (i=0; i<descs.length-1; i++) {
+		for (i=0; i<descs.length; i++) {
 			descs[i].setAttribute("style", "color: " + whiteTextColor);
 		}
 
@@ -111,12 +98,12 @@ function setColorMode(mode) {
 		document.getElementById("github-icon").setAttribute("fill", "black");
 
 		icons = document.getElementsByClassName("project-github-icon");
-		for (i=0; i<icons.length-1; i++) {
+		for (i=0; i<icons.length; i++) {
 			icons[i].setAttribute("fill", "black");
 		}
 
 		descs = document.getElementsByClassName("project-entry-desc");
-		for (i=0; i<descs.length-1; i++) {
+		for (i=0; i<descs.length; i++) {
 			descs[i].setAttribute("style", "color: #253f3f");
 		}
 

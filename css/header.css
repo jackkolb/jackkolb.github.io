@@ -65,7 +65,7 @@ button:hover {
     border-bottom: 3px solid grey;
 }
 
-div.icon-row {
+.icon-row {
     display: flex;
     flex-direction: row;
 }

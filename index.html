@@ -2,12 +2,63 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title id="title">Jack Kolb</title>
         <meta
             name="description"
-            content="Hi! I am Jack Kolb! Welcome to my personal website."
+            content="Jack Kolb is a Research Scientist at Apple specializing in robotics, human-AI teaming, and belief state inference. PhD in Robotics from Georgia Tech."
         />
         <meta name="author" content="Jack Kolb" />
+        <link rel="canonical" href="https://jackkolb.com/" />
+
+        <!-- Open Graph -->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Jack Kolb — Research Scientist | Robotics &amp; Human-AI Teaming" />
+        <meta property="og:description" content="Research Scientist at Apple specializing in robotics, human-AI teaming, and belief state inference. PhD in Robotics from Georgia Tech." />
+        <meta property="og:url" content="https://jackkolb.com/" />
+        <meta property="og:image" content="https://jackkolb.com/img/portraits/cherries.png" />
+        <meta property="og:site_name" content="Jack Kolb" />
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Jack Kolb — Research Scientist | Robotics &amp; Human-AI Teaming" />
+        <meta name="twitter:description" content="Research Scientist at Apple specializing in robotics, human-AI teaming, and belief state inference. PhD in Robotics from Georgia Tech." />
+        <meta name="twitter:image" content="https://jackkolb.com/img/portraits/cherries.png" />
+
+        <!-- Structured Data -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Jack Kolb",
+            "url": "https://jackkolb.com",
+            "jobTitle": "Research Scientist",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "Apple"
+            },
+            "alumniOf": [
+                {
+                    "@type": "CollegeOrUniversity",
+                    "name": "Georgia Institute of Technology"
+                },
+                {
+                    "@type": "CollegeOrUniversity",
+                    "name": "University of California, Riverside"
+                }
+            ],
+            "sameAs": [
+                "https://github.com/jackkolb",
+                "https://scholar.google.com/citations?user=kKoPyvIAAAAJ",
+                "https://www.linkedin.com/in/jack-kolb-786134b8/",
+                "https://www.instagram.com/jackkolb"
+            ],
+            "image": "https://jackkolb.com/img/portraits/cherries.png",
+            "email": "jack@jackkolb.com",
+            "knowsAbout": ["Robotics", "Human-AI Teaming", "Machine Learning", "Belief State Inference"]
+        }
+        </script>
+
         <link
             href="https://fonts.googleapis.com/css?family=Source+Code+Pro"
             rel="stylesheet"
@@ -18,27 +69,26 @@
         <link rel="stylesheet" type="text/css" href="css/about.css" />
         <link rel="stylesheet" type="text/css" href="css/project_page.css" />
         <link rel="stylesheet" type="text/css" href="css/timeline.css" />
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FQBR3RM2FV"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-FQBR3RM2FV')
+            var mode = "light"
+        </script>
     </head>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FQBR3RM2FV"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-FQBR3RM2FV')
-        var mode = "light"
-    </script>
 
     <body>
         <br /><br />
         <div id="preflag"></div>
         <div id="title"></div>
 
-        <div id="home" class="main">
-            <div id="name-title" class="name-title" onclick="mode = mode == 'light' ? 'dark' : 'light'; setColorMode()">
+        <header id="home" class="main">
+            <h1 id="name-title" class="name-title" onclick="mode = mode == 'light' ? 'dark' : 'light'; setColorMode()">
                 Jack Kolb
-            </div>
+            </h1>
             <div id="welcome-title" class="welcome-title">
                 Welcome to this portfolio of my works
             </div>
@@ -47,12 +97,12 @@
                 id="welcome-photo"
                 onclick="changeWelcomePhoto()"
                 src="img/portraits/cherries.png"
-                alt="Photo of me!"
+                alt="Portrait photo of Jack Kolb"
                 class="photo"
             />
             <br />
 
-            <div class="icon-row" style="padding: 15px 10px">
+            <nav class="icon-row" style="padding: 15px 10px">
                 <a
                     class="header-icon"
                     href="https://github.com/jackkolb"
@@ -206,9 +256,9 @@
                         />
                     </svg>
                 </div>
-            </div>
+            </nav>
 
-            <div class="buttons">
+            <nav class="buttons">
                 <div class="tab-title">
                     <button id="about-button" onclick="handleAbout()">
                         <b>About Me</b>
@@ -229,20 +279,14 @@
                         <b>CV</b>
                     </button>
                 </div>
-            </div>
-        </div>
+            </nav>
+        </header>
 
         <div id="flag"></div>
 
         <br />
-        <div src="js/projects.js"></div>
-        <div src="js/research.js"></div>
-        <div src="js/about.js"></div>
-        <div src="js/resume.js"></div>
-        <div src="js/utility.js"></div>
-
-        <div id="content" class="light"></div>
-        <div id="about" class="about-box intro-about">
+        <main id="content" class="light"></main>
+        <section id="about" class="about-box intro-about">
             I am a roboticist working to expand how agents can become genuine teammates to support people in human-centered environments.
             <br/><br/>
             Currently, I am a Research Scientist at
@@ -269,7 +313,7 @@
                 ></span
             >, where I explored how agents can
             <span style="color: #008132"
-                >infer user beliefs</b></span>,
+                >infer user beliefs</span>,
             <span style="color: #3b67e0"
                 >predict teammate performance</span>, and
             <span style="color: #e69d0d"
@@ -295,7 +339,6 @@
                 ><a
                     class="bio-link"
                     href="https://harishravichandar.com"
-                    ,
                     target="_blank"
                     ><b>Harish Ravichandar</b></a
                 ></span
@@ -354,25 +397,568 @@
 
             I spend my free time working on side projects and playing piano.
             <br /><br />
-            <div id="timeline"></div>
-            <circle cx="100" cy="100" r="75" />
-        </div>
+            <div id="timeline">
+Here is what I have been up to lately:<br><br>
+                <div class="timeline-entry" onclick="window.open('https://jackkolb.com/pdf/ICIP_25_Enabling_Controllable_Identity_Preserving_Non_Rigid_Edit_in_Human_Centric_Images.pdf', '_blank');"><span class="dot" style="background-color: #3b67e0"></span> <span style="float:right"><svg class="research-paper-icon" style="width:21px;height:21px" viewBox="0 0 384 512"><path d="M320 464C328.8 464 336 456.8 336 448V416H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V416H48V448C48 456.8 55.16 464 64 464H320zM256 160C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V192H0V64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V192H336V160H256zM88 224C118.9 224 144 249.1 144 280C144 310.9 118.9 336 88 336H80V368C80 376.8 72.84 384 64 384C55.16 384 48 376.8 48 368V240C48 231.2 55.16 224 64 224H88zM112 280C112 266.7 101.3 256 88 256H80V304H88C101.3 304 112 293.3 112 280zM160 240C160 231.2 167.2 224 176 224H200C226.5 224 248 245.5 248 272V336C248 362.5 226.5 384 200 384H176C167.2 384 160 376.8 160 368V240zM192 352H200C208.8 352 216 344.8 216 336V272C216 263.2 208.8 256 200 256H192V352zM336 224C344.8 224 352 231.2 352 240C352 248.8 344.8 256 336 256H304V288H336C344.8 288 352 295.2 352 304C352 312.8 344.8 320 336 320H304V368C304 376.8 296.8 384 288 384C279.2 384 272 376.8 272 368V240C272 231.2 279.2 224 288 224H336z"></path></svg></span><i>Sep'25</i>&emsp;Conference Publication at IEEE ICIP 2025</div>
+                <div class="timeline-entry" onclick="window.open('https://jackkolb.com/pdf/ROMAN_25_Model_Cards_for_AI_Teammates_Comparing_Human_AI_Team_Familiarization_Methods_for_High_Stakes_Environments.pdf', '_blank');"><span class="dot" style="background-color: #3b67e0"></span> <span style="float:right"><svg class="research-paper-icon" style="width:21px;height:21px" viewBox="0 0 384 512"><path d="M320 464C328.8 464 336 456.8 336 448V416H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V416H48V448C48 456.8 55.16 464 64 464H320zM256 160C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V192H0V64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V192H336V160H256zM88 224C118.9 224 144 249.1 144 280C144 310.9 118.9 336 88 336H80V368C80 376.8 72.84 384 64 384C55.16 384 48 376.8 48 368V240C48 231.2 55.16 224 64 224H88zM112 280C112 266.7 101.3 256 88 256H80V304H88C101.3 304 112 293.3 112 280zM160 240C160 231.2 167.2 224 176 224H200C226.5 224 248 245.5 248 272V336C248 362.5 226.5 384 200 384H176C167.2 384 160 376.8 160 368V240zM192 352H200C208.8 352 216 344.8 216 336V272C216 263.2 208.8 256 200 256H192V352zM336 224C344.8 224 352 231.2 352 240C352 248.8 344.8 256 336 256H304V288H336C344.8 288 352 295.2 352 304C352 312.8 344.8 320 336 320H304V368C304 376.8 296.8 384 288 384C279.2 384 272 376.8 272 368V240C272 231.2 279.2 224 288 224H336z"></path></svg></span><i>Aug'25</i>&emsp;Conference Publication at IEEE RO-MAN 2025</div>
+                <div class="timeline-entry" onclick="window.open('https://jackkolb.com/pdf/RAL_25_Attention_Tunable_Safety_Barriers_for_Human_Autonomy_Teaming_in_Specialized_Aviation_Missions.pdf', '_blank');"><span class="dot" style="background-color: #3b67e0"></span> <span style="float:right"><svg class="research-paper-icon" style="width:21px;height:21px" viewBox="0 0 384 512"><path d="M320 464C328.8 464 336 456.8 336 448V416H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V416H48V448C48 456.8 55.16 464 64 464H320zM256 160C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V192H0V64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V192H336V160H256zM88 224C118.9 224 144 249.1 144 280C144 310.9 118.9 336 88 336H80V368C80 376.8 72.84 384 64 384C55.16 384 48 376.8 48 368V240C48 231.2 55.16 224 64 224H88zM112 280C112 266.7 101.3 256 88 256H80V304H88C101.3 304 112 293.3 112 280zM160 240C160 231.2 167.2 224 176 224H200C226.5 224 248 245.5 248 272V336C248 362.5 226.5 384 200 384H176C167.2 384 160 376.8 160 368V240zM192 352H200C208.8 352 216 344.8 216 336V272C216 263.2 208.8 256 200 256H192V352zM336 224C344.8 224 352 231.2 352 240C352 248.8 344.8 256 336 256H304V288H336C344.8 288 352 295.2 352 304C352 312.8 344.8 320 336 320H304V368C304 376.8 296.8 384 288 384C279.2 384 272 376.8 272 368V240C272 231.2 279.2 224 288 224H336z"></path></svg></span><i>Aug'25</i>&emsp;Journal Publication at RA-L 2025</div>
+                <div class="timeline-entry" onclick="window.open('https://apple.com', '_blank');"><span class="dot" style="background-color: #db960c"></span> <i>Jun'25</i>&emsp;Started working at Apple</div>
+                <div class="timeline-entry" onclick="window.open('https://robotics.gatech.edu', '_blank');"><span class="dot" style="background-color: #dd2d2d"></span> <i>May'25</i>&emsp;Completed PhD studies at Georgia Tech</div>
+                <div class="timeline-entry" onclick="window.open('https://jackkolb.com/pdf/Kolb_Defense_Presentation.pdf', '_blank');"><span class="dot" style="background-color: darkmagenta"></span> <i>Mar'25</i>&emsp;Successfully passed my PhD Defense!</div>
+                <div class="timeline-entry" onclick="window.open('https://travelers.com', '_blank');"><span class="dot" style="background-color: #db960c"></span> <i>May'25</i>&emsp;Interned at Travelers</div>
+                <div class="timeline-entry" onclick="window.open('https://jackkolb.com/pdf/IROS_24_Inferring_Belief_States_in_Partially_Observable_Human_Robot_Teams.pdf', '_blank');"><span class="dot" style="background-color: #3b67e0"></span> <span style="float:right"><svg class="research-paper-icon" style="width:21px;height:21px" viewBox="0 0 384 512"><path d="M320 464C328.8 464 336 456.8 336 448V416H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V416H48V448C48 456.8 55.16 464 64 464H320zM256 160C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V192H0V64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V192H336V160H256zM88 224C118.9 224 144 249.1 144 280C144 310.9 118.9 336 88 336H80V368C80 376.8 72.84 384 64 384C55.16 384 48 376.8 48 368V240C48 231.2 55.16 224 64 224H88zM112 280C112 266.7 101.3 256 88 256H80V304H88C101.3 304 112 293.3 112 280zM160 240C160 231.2 167.2 224 176 224H200C226.5 224 248 245.5 248 272V336C248 362.5 226.5 384 200 384H176C167.2 384 160 376.8 160 368V240zM192 352H200C208.8 352 216 344.8 216 336V272C216 263.2 208.8 256 200 256H192V352zM336 224C344.8 224 352 231.2 352 240C352 248.8 344.8 256 336 256H304V288H336C344.8 288 352 295.2 352 304C352 312.8 344.8 320 336 320H304V368C304 376.8 296.8 384 288 384C279.2 384 272 376.8 272 368V240C272 231.2 279.2 224 288 224H336z"></path></svg></span><i>Oct'24</i>&emsp;Conference Publication at IEEE/RSJ IROS 2024</div>
+                <div class="timeline-entry" onclick="window.open('https://jackkolb.com/pdf/ICRA40_A_Framework_for_Inferring_Belief_States_in_Partially_Observable_Human_Robot_Teams.pdf', '_blank');"><span class="dot" style="background-color: #008132"></span> <span style="float:right"><svg class="research-paper-icon" style="width:21px;height:21px" viewBox="0 0 384 512"><path d="M320 464C328.8 464 336 456.8 336 448V416H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V416H48V448C48 456.8 55.16 464 64 464H320zM256 160C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V192H0V64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V192H336V160H256zM88 224C118.9 224 144 249.1 144 280C144 310.9 118.9 336 88 336H80V368C80 376.8 72.84 384 64 384C55.16 384 48 376.8 48 368V240C48 231.2 55.16 224 64 224H88zM112 280C112 266.7 101.3 256 88 256H80V304H88C101.3 304 112 293.3 112 280zM160 240C160 231.2 167.2 224 176 224H200C226.5 224 248 245.5 248 272V336C248 362.5 226.5 384 200 384H176C167.2 384 160 376.8 160 368V240zM192 352H200C208.8 352 216 344.8 216 336V272C216 263.2 208.8 256 200 256H192V352zM336 224C344.8 224 352 231.2 352 240C352 248.8 344.8 256 336 256H304V288H336C344.8 288 352 295.2 352 304C352 312.8 344.8 320 336 320H304V368C304 376.8 296.8 384 288 384C279.2 384 272 376.8 272 368V240C272 231.2 279.2 224 288 224H336z"></path></svg></span><i>Sep'24</i>&emsp;Symposium Publication at IEEE ICRA@40 2024</div>
+                <div class="timeline-entry" onclick="window.open('https://jackkolb.com/pdf/HFES_24_Joint_Intelligence_Surveillance_and_Reconnaissance_Mission_Collaboration_with_Autonomous_Pilots.pdf', '_blank');"><span class="dot" style="background-color: #3b67e0"></span> <span style="float:right"><svg class="research-paper-icon" style="width:21px;height:21px" viewBox="0 0 384 512"><path d="M320 464C328.8 464 336 456.8 336 448V416H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V416H48V448C48 456.8 55.16 464 64 464H320zM256 160C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V192H0V64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V192H336V160H256zM88 224C118.9 224 144 249.1 144 280C144 310.9 118.9 336 88 336H80V368C80 376.8 72.84 384 64 384C55.16 384 48 376.8 48 368V240C48 231.2 55.16 224 64 224H88zM112 280C112 266.7 101.3 256 88 256H80V304H88C101.3 304 112 293.3 112 280zM160 240C160 231.2 167.2 224 176 224H200C226.5 224 248 245.5 248 272V336C248 362.5 226.5 384 200 384H176C167.2 384 160 376.8 160 368V240zM192 352H200C208.8 352 216 344.8 216 336V272C216 263.2 208.8 256 200 256H192V352zM336 224C344.8 224 352 231.2 352 240C352 248.8 344.8 256 336 256H304V288H336C344.8 288 352 295.2 352 304C352 312.8 344.8 320 336 320H304V368C304 376.8 296.8 384 288 384C279.2 384 272 376.8 272 368V240C272 231.2 279.2 224 288 224H336z"></path></svg></span><i>Sep'24</i>&emsp;Conference Publication at HFES ASPIRE 2024</div>
+                <div class="timeline-entry" onclick="window.open('https://jackkolb.com/pdf/DASC_24_Towards_Safe_Collaboration_Between_Autonomous_Pilots_and_Human_Crews_for_Intelligence_Surveillance_and_Reconnaissance.pdf', '_blank');"><span class="dot" style="background-color: #3b67e0"></span> <span style="float:right"><svg class="research-paper-icon" style="width:21px;height:21px" viewBox="0 0 384 512"><path d="M320 464C328.8 464 336 456.8 336 448V416H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V416H48V448C48 456.8 55.16 464 64 464H320zM256 160C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V192H0V64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V192H336V160H256zM88 224C118.9 224 144 249.1 144 280C144 310.9 118.9 336 88 336H80V368C80 376.8 72.84 384 64 384C55.16 384 48 376.8 48 368V240C48 231.2 55.16 224 64 224H88zM112 280C112 266.7 101.3 256 88 256H80V304H88C101.3 304 112 293.3 112 280zM160 240C160 231.2 167.2 224 176 224H200C226.5 224 248 245.5 248 272V336C248 362.5 226.5 384 200 384H176C167.2 384 160 376.8 160 368V240zM192 352H200C208.8 352 216 344.8 216 336V272C216 263.2 208.8 256 200 256H192V352zM336 224C344.8 224 352 231.2 352 240C352 248.8 344.8 256 336 256H304V288H336C344.8 288 352 295.2 352 304C352 312.8 344.8 320 336 320H304V368C304 376.8 296.8 384 288 384C279.2 384 272 376.8 272 368V240C272 231.2 279.2 224 288 224H336z"></path></svg></span><i>Sep'24</i>&emsp;Conference Publication at AIAA/IEEE DASC 2024</div>
+                <div class="timeline-entry" onclick="window.open('https://jackkolb.com/pdf/Kolb_Proposal_Presentation.pdf', '_blank');"><span class="dot" style="background-color: darkmagenta"></span> <i>Feb'24</i>&emsp;Successfully passed my PhD Proposal!</div>
+                <div class="timeline-entry" onclick="window.open('https://jackkolb.com/pdf/IROS_23_Effects_of_Robot_Motion_on_Comfort_Dynamics_of_Novice_Users_in_Close_Proximity_Human_Robot_Interactions.pdf', '_blank');"><span class="dot" style="background-color: #3b67e0"></span> <span style="float:right"><svg class="research-paper-icon" style="width:21px;height:21px" viewBox="0 0 384 512"><path d="M320 464C328.8 464 336 456.8 336 448V416H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V416H48V448C48 456.8 55.16 464 64 464H320zM256 160C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V192H0V64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V192H336V160H256zM88 224C118.9 224 144 249.1 144 280C144 310.9 118.9 336 88 336H80V368C80 376.8 72.84 384 64 384C55.16 384 48 376.8 48 368V240C48 231.2 55.16 224 64 224H88zM112 280C112 266.7 101.3 256 88 256H80V304H88C101.3 304 112 293.3 112 280zM160 240C160 231.2 167.2 224 176 224H200C226.5 224 248 245.5 248 272V336C248 362.5 226.5 384 200 384H176C167.2 384 160 376.8 160 368V240zM192 352H200C208.8 352 216 344.8 216 336V272C216 263.2 208.8 256 200 256H192V352zM336 224C344.8 224 352 231.2 352 240C352 248.8 344.8 256 336 256H304V288H336C344.8 288 352 295.2 352 304C352 312.8 344.8 320 336 320H304V368C304 376.8 296.8 384 288 384C279.2 384 272 376.8 272 368V240C272 231.2 279.2 224 288 224H336z"></path></svg></span><i>Oct'23</i>&emsp;Conference Publication at IEEE/RSJ IROS 2023</div>
+                <div class="timeline-entry" onclick="window.open('https://jackkolb.com/pdf/ROMAN_23_Structuring_Shared_Decision_Making_in_Human_Robot_Teams.pdf', '_blank');"><span class="dot" style="background-color: #3b67e0"></span> <span style="float:right"><svg class="research-paper-icon" style="width:21px;height:21px" viewBox="0 0 384 512"><path d="M320 464C328.8 464 336 456.8 336 448V416H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V416H48V448C48 456.8 55.16 464 64 464H320zM256 160C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V192H0V64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V192H336V160H256zM88 224C118.9 224 144 249.1 144 280C144 310.9 118.9 336 88 336H80V368C80 376.8 72.84 384 64 384C55.16 384 48 376.8 48 368V240C48 231.2 55.16 224 64 224H88zM112 280C112 266.7 101.3 256 88 256H80V304H88C101.3 304 112 293.3 112 280zM160 240C160 231.2 167.2 224 176 224H200C226.5 224 248 245.5 248 272V336C248 362.5 226.5 384 200 384H176C167.2 384 160 376.8 160 368V240zM192 352H200C208.8 352 216 344.8 216 336V272C216 263.2 208.8 256 200 256H192V352zM336 224C344.8 224 352 231.2 352 240C352 248.8 344.8 256 336 256H304V288H336C344.8 288 352 295.2 352 304C352 312.8 344.8 320 336 320H304V368C304 376.8 296.8 384 288 384C279.2 384 272 376.8 272 368V240C272 231.2 279.2 224 288 224H336z"></path></svg></span><i>Aug'23</i>&emsp;Conference Publication at IEEE RO-MAN 2023</div>
+                <div class="timeline-entry" onclick="window.open('https://gatech.edu', '_blank');"><span class="dot" style="background-color: #dd2d2d"></span> <i>May'23</i>&emsp;Completed MS studies at Georgia Tech</div>
+                <div class="timeline-entry"><span class="dot" style="background-color: darkmagenta"></span> <i>Dec'22</i>&emsp;Awarded a Grant from Amazon Consumer Robotics ($80k)</div>
+                <div class="timeline-entry" onclick="window.open('https://jackkolb.com/pdf/ROMAN_22_Leveraging_Cognitive_States_in_Human_Robot_Teaming.pdf', '_blank');"><span class="dot" style="background-color: #3b67e0"></span> <span style="float:right"><svg class="research-paper-icon" style="width:21px;height:21px" viewBox="0 0 384 512"><path d="M320 464C328.8 464 336 456.8 336 448V416H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V416H48V448C48 456.8 55.16 464 64 464H320zM256 160C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V192H0V64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V192H336V160H256zM88 224C118.9 224 144 249.1 144 280C144 310.9 118.9 336 88 336H80V368C80 376.8 72.84 384 64 384C55.16 384 48 376.8 48 368V240C48 231.2 55.16 224 64 224H88zM112 280C112 266.7 101.3 256 88 256H80V304H88C101.3 304 112 293.3 112 280zM160 240C160 231.2 167.2 224 176 224H200C226.5 224 248 245.5 248 272V336C248 362.5 226.5 384 200 384H176C167.2 384 160 376.8 160 368V240zM192 352H200C208.8 352 216 344.8 216 336V272C216 263.2 208.8 256 200 256H192V352zM336 224C344.8 224 352 231.2 352 240C352 248.8 344.8 256 336 256H304V288H336C344.8 288 352 295.2 352 304C352 312.8 344.8 320 336 320H304V368C304 376.8 296.8 384 288 384C279.2 384 272 376.8 272 368V240C272 231.2 279.2 224 288 224H336z"></path></svg></span><i>Aug'22</i>&emsp;Conference Publication at IEEE RO-MAN 2022</div>
+                <div class="timeline-entry" onclick="window.open('https://jackkolb.com/pdf/IJCAI_22_Constrained_RL_for_Dexterous_Manipulation.pdf', '_blank');"><span class="dot" style="background-color: #008132"></span> <span style="float:right"><svg class="research-paper-icon" style="width:21px;height:21px" viewBox="0 0 384 512"><path d="M320 464C328.8 464 336 456.8 336 448V416H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V416H48V448C48 456.8 55.16 464 64 464H320zM256 160C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V192H0V64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V192H336V160H256zM88 224C118.9 224 144 249.1 144 280C144 310.9 118.9 336 88 336H80V368C80 376.8 72.84 384 64 384C55.16 384 48 376.8 48 368V240C48 231.2 55.16 224 64 224H88zM112 280C112 266.7 101.3 256 88 256H80V304H88C101.3 304 112 293.3 112 280zM160 240C160 231.2 167.2 224 176 224H200C226.5 224 248 245.5 248 272V336C248 362.5 226.5 384 200 384H176C167.2 384 160 376.8 160 368V240zM192 352H200C208.8 352 216 344.8 216 336V272C216 263.2 208.8 256 200 256H192V352zM336 224C344.8 224 352 231.2 352 240C352 248.8 344.8 256 336 256H304V288H336C344.8 288 352 295.2 352 304C352 312.8 344.8 320 336 320H304V368C304 376.8 296.8 384 288 384C279.2 384 272 376.8 272 368V240C272 231.2 279.2 224 288 224H336z"></path></svg></span><i>Jul'22</i>&emsp;Workshop Publication at IJCAI (Safe RL) 2022</div>
+                <div class="timeline-entry" onclick="window.open('https://gatik.ai', '_blank');"><span class="dot" style="background-color: #db960c"></span> <i>May'22</i>&emsp;Interned at Gatik AI</div>
+                <div class="timeline-entry" onclick="window.open('https://arxiv.org/abs/2204.07631', '_blank');"><span class="dot" style="background-color: #008132"></span> <span style="float:right"><svg class="research-paper-icon" style="width:21px;height:21px" viewBox="0 0 384 512"><path d="M320 464C328.8 464 336 456.8 336 448V416H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V416H48V448C48 456.8 55.16 464 64 464H320zM256 160C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V192H0V64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V192H336V160H256zM88 224C118.9 224 144 249.1 144 280C144 310.9 118.9 336 88 336H80V368C80 376.8 72.84 384 64 384C55.16 384 48 376.8 48 368V240C48 231.2 55.16 224 64 224H88zM112 280C112 266.7 101.3 256 88 256H80V304H88C101.3 304 112 293.3 112 280zM160 240C160 231.2 167.2 224 176 224H200C226.5 224 248 245.5 248 272V336C248 362.5 226.5 384 200 384H176C167.2 384 160 376.8 160 368V240zM192 352H200C208.8 352 216 344.8 216 336V272C216 263.2 208.8 256 200 256H192V352zM336 224C344.8 224 352 231.2 352 240C352 248.8 344.8 256 336 256H304V288H336C344.8 288 352 295.2 352 304C352 312.8 344.8 320 336 320H304V368C304 376.8 296.8 384 288 384C279.2 384 272 376.8 272 368V240C272 231.2 279.2 224 288 224H336z"></path></svg></span><i>Mar'22</i>&emsp;Workshop Publication at ACM/IEEE HRI (MLHRC) 2022</div>
+                <div class="timeline-entry" onclick="window.open('https://jackkolb.com/pdf/ROMAN_21_Predicting_Individual_Performance_in_Human_Robot_Teaming.pdf', '_blank');"><span class="dot" style="background-color: #3b67e0"></span> <span style="float:right"><svg class="research-paper-icon" style="width:21px;height:21px" viewBox="0 0 384 512"><path d="M320 464C328.8 464 336 456.8 336 448V416H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V416H48V448C48 456.8 55.16 464 64 464H320zM256 160C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V192H0V64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V192H336V160H256zM88 224C118.9 224 144 249.1 144 280C144 310.9 118.9 336 88 336H80V368C80 376.8 72.84 384 64 384C55.16 384 48 376.8 48 368V240C48 231.2 55.16 224 64 224H88zM112 280C112 266.7 101.3 256 88 256H80V304H88C101.3 304 112 293.3 112 280zM160 240C160 231.2 167.2 224 176 224H200C226.5 224 248 245.5 248 272V336C248 362.5 226.5 384 200 384H176C167.2 384 160 376.8 160 368V240zM192 352H200C208.8 352 216 344.8 216 336V272C216 263.2 208.8 256 200 256H192V352zM336 224C344.8 224 352 231.2 352 240C352 248.8 344.8 256 336 256H304V288H336C344.8 288 352 295.2 352 304C352 312.8 344.8 320 336 320H304V368C304 376.8 296.8 384 288 384C279.2 384 272 376.8 272 368V240C272 231.2 279.2 224 288 224H336z"></path></svg></span><i>Aug'21</i>&emsp;Conference Publication at IEEE RO-MAN 2021</div>
+                <div class="timeline-entry" onclick="window.open('https://jackkolb.com/pdf/HRI_21_Predicting_Individual_Human_Performance_in_Human_Robot_Teaming.pdf', '_blank');"><span class="dot" style="background-color: #008132"></span> <span style="float:right"><svg class="research-paper-icon" style="width:21px;height:21px" viewBox="0 0 384 512"><path d="M320 464C328.8 464 336 456.8 336 448V416H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V416H48V448C48 456.8 55.16 464 64 464H320zM256 160C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V192H0V64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V192H336V160H256zM88 224C118.9 224 144 249.1 144 280C144 310.9 118.9 336 88 336H80V368C80 376.8 72.84 384 64 384C55.16 384 48 376.8 48 368V240C48 231.2 55.16 224 64 224H88zM112 280C112 266.7 101.3 256 88 256H80V304H88C101.3 304 112 293.3 112 280zM160 240C160 231.2 167.2 224 176 224H200C226.5 224 248 245.5 248 272V336C248 362.5 226.5 384 200 384H176C167.2 384 160 376.8 160 368V240zM192 352H200C208.8 352 216 344.8 216 336V272C216 263.2 208.8 256 200 256H192V352zM336 224C344.8 224 352 231.2 352 240C352 248.8 344.8 256 336 256H304V288H336C344.8 288 352 295.2 352 304C352 312.8 344.8 320 336 320H304V368C304 376.8 296.8 384 288 384C279.2 384 272 376.8 272 368V240C272 231.2 279.2 224 288 224H336z"></path></svg></span><i>Mar'21</i>&emsp;Workshop Publication at ACM/IEEE HRI (WYSD) 2021</div>
+                <div class="timeline-entry" onclick="window.open('https://research.gatech.edu/robotics', '_blank');"><span class="dot" style="background-color: #dd2d2d"></span> <i>Aug'20</i>&emsp;Began PhD studies at Georgia Tech</div>
+                <div class="timeline-entry" onclick="window.open('https://robosub.org/programs/2020', '_blank');"><span class="dot" style="background-color: darkmagenta"></span> <i>Aug'20</i>&emsp;Competed at RoboSub 2020</div>
+                <div class="timeline-entry" onclick="window.open('https://nextgenat.com', '_blank');"><span class="dot" style="background-color: #db960c"></span> <i>Jun'20</i>&emsp;Interned at NextGen Assistive Technologies</div>
+                <div class="timeline-entry" onclick="window.open('https://ucr.edu', '_blank');"><span class="dot" style="background-color: #dd2d2d"></span> <i>Jun'20</i>&emsp;Completed BS studies at UC Riverside</div>
+            </div>
+        </section>
+
+        <section id="research" style="display: none;">
+            <div>
+                <div class="research-container">
+                    <div class="research-subcontainer">
+                        <div class="research-entry research-entry-hover" onclick="window.open('https://jackkolb.com/pdf/RAL_25_Predicting_World_Belief_States_in_Dynamic_Real_World_Environments.pdf', '_blank')">
+                            <div class="research-entry-title"><b>Predicting World Belief States in Dynamic Real-World Environments</b></div>
+                            <div class="research-entry-tools"><i>Preprint</i></div>
+                            <div class="big-space"></div>
+                            <div class="research-entry-tools"><b>J. Kolb</b>, A. Garg, N. Warner, K. Feigh</div>
+                            <div class="big-space"></div>
+                            <div class="project-entry-desc">We explore how a robot can infer the belief state of a human in an environment through theory of mind capabilities.</div>
+                            <div class="big-space"></div>
+                        </div>
+                        <div class="research-entry-hover"><svg class="research-paper-icon" style="width:24px;height:24px" viewBox="0 0 384 512"><path d="M320 464C328.8 464 336 456.8 336 448V416H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V416H48V448C48 456.8 55.16 464 64 464H320zM256 160C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V192H0V64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V192H336V160H256zM88 224C118.9 224 144 249.1 144 280C144 310.9 118.9 336 88 336H80V368C80 376.8 72.84 384 64 384C55.16 384 48 376.8 48 368V240C48 231.2 55.16 224 64 224H88zM112 280C112 266.7 101.3 256 88 256H80V304H88C101.3 304 112 293.3 112 280zM160 240C160 231.2 167.2 224 176 224H200C226.5 224 248 245.5 248 272V336C248 362.5 226.5 384 200 384H176C167.2 384 160 376.8 160 368V240zM192 352H200C208.8 352 216 344.8 216 336V272C216 263.2 208.8 256 200 256H192V352zM336 224C344.8 224 352 231.2 352 240C352 248.8 344.8 256 336 256H304V288H336C344.8 288 352 295.2 352 304C352 312.8 344.8 320 336 320H304V368C304 376.8 296.8 384 288 384C279.2 384 272 376.8 272 368V240C272 231.2 279.2 224 288 224H336z"/></svg></div>
+                    </div>
+                </div>
+                <div class="break-space"></div>
+            </div>
+            <div>
+                <div class="research-container">
+                    <div class="research-subcontainer">
+                        <div class="research-entry research-entry-hover" onclick="window.open('https://jackkolb.com/pdf/ROMAN_25_Model_Cards_for_AI_Teammates_Comparing_Human_AI_Team_Familiarization_Methods_for_High_Stakes_Environments.pdf', '_blank')">
+                            <div class="research-entry-title"><b>Model Cards for AI Teammates: Comparing Human-AI Team Familiarization Methods for High-Stakes Environments</b></div>
+                            <div class="research-entry-tools"><i>Conference Proceedings of IEEE RO-MAN '25</i></div>
+                            <div class="big-space"></div>
+                            <div class="research-entry-tools">R. Bowers, R. Agbeyibor, <b>J. Kolb</b>, K. Feigh</div>
+                            <div class="big-space"></div>
+                            <div class="project-entry-desc">We explore methods for familiarizing users to an autonomous wingmen and their effect on team performance and human factors.</div>
+                            <div class="big-space"></div>
+                        </div>
+                        <div class="research-entry-hover"><svg class="research-paper-icon" style="width:24px;height:24px" viewBox="0 0 384 512"><path d="M320 464C328.8 464 336 456.8 336 448V416H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V416H48V448C48 456.8 55.16 464 64 464H320zM256 160C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V192H0V64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V192H336V160H256zM88 224C118.9 224 144 249.1 144 280C144 310.9 118.9 336 88 336H80V368C80 376.8 72.84 384 64 384C55.16 384 48 376.8 48 368V240C48 231.2 55.16 224 64 224H88zM112 280C112 266.7 101.3 256 88 256H80V304H88C101.3 304 112 293.3 112 280zM160 240C160 231.2 167.2 224 176 224H200C226.5 224 248 245.5 248 272V336C248 362.5 226.5 384 200 384H176C167.2 384 160 376.8 160 368V240zM192 352H200C208.8 352 216 344.8 216 336V272C216 263.2 208.8 256 200 256H192V352zM336 224C344.8 224 352 231.2 352 240C352 248.8 344.8 256 336 256H304V288H336C344.8 288 352 295.2 352 304C352 312.8 344.8 320 336 320H304V368C304 376.8 296.8 384 288 384C279.2 384 272 376.8 272 368V240C272 231.2 279.2 224 288 224H336z"/></svg></div>
+                    </div>
+                </div>
+                <div class="break-space"></div>
+            </div>
+            <div>
+                <div class="research-container">
+                    <div class="research-subcontainer">
+                        <div class="research-entry research-entry-hover" onclick="window.open('https://jackkolb.com/pdf/ICIP_25_Enabling_Controllable_Identity_Preserving_Non_Rigid_Edit_in_Human_Centric_Images.pdf', '_blank')">
+                            <div class="research-entry-title"><b>Enabling Controllable, Identity Preserving, Non-Rigid Edits in Human-Centric Images</b></div>
+                            <div class="research-entry-tools"><i>Conference Proceedings of IEEE ICIP '25</i></div>
+                            <div class="big-space"></div>
+                            <div class="research-entry-tools">N. Warner, <b>J. Kolb</b>, M. Hahn, J. Huang, I. Essa, V. Birodkar</div>
+                            <div class="big-space"></div>
+                            <div class="project-entry-desc">We condition diffusion in-painting with text captions from image sequences to enable text-controllable pose edits.</div>
+                            <div class="big-space"></div>
+                        </div>
+                        <div class="research-entry-hover"><svg class="research-paper-icon" style="width:24px;height:24px" viewBox="0 0 384 512"><path d="M320 464C328.8 464 336 456.8 336 448V416H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V416H48V448C48 456.8 55.16 464 64 464H320zM256 160C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V192H0V64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V192H336V160H256zM88 224C118.9 224 144 249.1 144 280C144 310.9 118.9 336 88 336H80V368C80 376.8 72.84 384 64 384C55.16 384 48 376.8 48 368V240C48 231.2 55.16 224 64 224H88zM112 280C112 266.7 101.3 256 88 256H80V304H88C101.3 304 112 293.3 112 280zM160 240C160 231.2 167.2 224 176 224H200C226.5 224 248 245.5 248 272V336C248 362.5 226.5 384 200 384H176C167.2 384 160 376.8 160 368V240zM192 352H200C208.8 352 216 344.8 216 336V272C216 263.2 208.8 256 200 256H192V352zM336 224C344.8 224 352 231.2 352 240C352 248.8 344.8 256 336 256H304V288H336C344.8 288 352 295.2 352 304C352 312.8 344.8 320 336 320H304V368C304 376.8 296.8 384 288 384C279.2 384 272 376.8 272 368V240C272 231.2 279.2 224 288 224H336z"/></svg></div>
+                    </div>
+                </div>
+                <div class="break-space"></div>
+            </div>
+            <div>
+                <div class="research-container">
+                    <div class="research-subcontainer">
+                        <div class="research-entry research-entry-hover" onclick="window.open('https://jackkolb.com/pdf/AVIATION_25_Investigating_Human_AI_Team_Fluency_in_Autonomous_Medical_Evacuation_A_Study_of_Novice_Aviator_Cognitive_States_and_HAI_Interface_Design.pdf', '_blank')">
+                            <div class="research-entry-title"><b>Investigating Human-AI Team Fluency in Autonomous Medical Evacuation: A Study of Novice Aviator Cognitive States and HAI Interface Design</b></div>
+                            <div class="research-entry-tools"><i>Conference Proceedings of AIAA AVIATION '25</i></div>
+                            <div class="big-space"></div>
+                            <div class="research-entry-tools">S. Doda, R. Agbeyibor, C. Cortes, <b>J. Kolb</b>, J. Magalhaes, K. Feigh</div>
+                            <div class="big-space"></div>
+                            <div class="project-entry-desc">Cognitive workload is estimated from a shared-authority medical evacuation scenario with an autonomous pilot.</div>
+                            <div class="big-space"></div>
+                        </div>
+                        <div class="research-entry-hover"><svg class="research-paper-icon" style="width:24px;height:24px" viewBox="0 0 384 512"><path d="M320 464C328.8 464 336 456.8 336 448V416H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V416H48V448C48 456.8 55.16 464 64 464H320zM256 160C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V192H0V64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V192H336V160H256zM88 224C118.9 224 144 249.1 144 280C144 310.9 118.9 336 88 336H80V368C80 376.8 72.84 384 64 384C55.16 384 48 376.8 48 368V240C48 231.2 55.16 224 64 224H88zM112 280C112 266.7 101.3 256 88 256H80V304H88C101.3 304 112 293.3 112 280zM160 240C160 231.2 167.2 224 176 224H200C226.5 224 248 245.5 248 272V336C248 362.5 226.5 384 200 384H176C167.2 384 160 376.8 160 368V240zM192 352H200C208.8 352 216 344.8 216 336V272C216 263.2 208.8 256 200 256H192V352zM336 224C344.8 224 352 231.2 352 240C352 248.8 344.8 256 336 256H304V288H336C344.8 288 352 295.2 352 304C352 312.8 344.8 320 336 320H304V368C304 376.8 296.8 384 288 384C279.2 384 272 376.8 272 368V240C272 231.2 279.2 224 288 224H336z"/></svg></div>
+                    </div>
+                </div>
+                <div class="break-space"></div>
+            </div>
+            <div>
+                <div class="research-container">
+                    <div class="research-subcontainer">
+                        <div class="research-entry research-entry-hover" onclick="window.open('https://jackkolb.com/pdf/SciTech_25_Use_of_Simulated_Mental_Models_and_Active_Replanning_for_Human_Robot_Interaction.pdf', '_blank')">
+                            <div class="research-entry-title"><b>Use of Simulated Mental Models and Active Replanning for Human-Robot Interaction</b></div>
+                            <div class="research-entry-tools"><i>Preprint</i></div>
+                            <div class="big-space"></div>
+                            <div class="research-entry-tools">J. Ren, A. Swaminathan, <b>J. Kolb</b>, Y. Zhao, S. Coogan, K. Feigh</div>
+                            <div class="big-space"></div>
+                            <div class="project-entry-desc">We propose a framework for intelligent user updates in multi-agent command & control by estimating the user's belief state.</div>
+                            <div class="big-space"></div>
+                        </div>
+                        <div class="research-entry-hover"><svg class="research-paper-icon" style="width:24px;height:24px" viewBox="0 0 384 512"><path d="M320 464C328.8 464 336 456.8 336 448V416H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V416H48V448C48 456.8 55.16 464 64 464H320zM256 160C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V192H0V64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V192H336V160H256zM88 224C118.9 224 144 249.1 144 280C144 310.9 118.9 336 88 336H80V368C80 376.8 72.84 384 64 384C55.16 384 48 376.8 48 368V240C48 231.2 55.16 224 64 224H88zM112 280C112 266.7 101.3 256 88 256H80V304H88C101.3 304 112 293.3 112 280zM160 240C160 231.2 167.2 224 176 224H200C226.5 224 248 245.5 248 272V336C248 362.5 226.5 384 200 384H176C167.2 384 160 376.8 160 368V240zM192 352H200C208.8 352 216 344.8 216 336V272C216 263.2 208.8 256 200 256H192V352zM336 224C344.8 224 352 231.2 352 240C352 248.8 344.8 256 336 256H304V288H336C344.8 288 352 295.2 352 304C352 312.8 344.8 320 336 320H304V368C304 376.8 296.8 384 288 384C279.2 384 272 376.8 272 368V240C272 231.2 279.2 224 288 224H336z"/></svg></div>
+                    </div>
+                </div>
+                <div class="break-space"></div>
+            </div>
+            <div>
+                <div class="research-container">
+                    <div class="research-subcontainer">
+                        <div class="research-entry research-entry-hover" onclick="window.open('https://jackkolb.com/pdf/IROS_24_Inferring_Belief_States_in_Partially_Observable_Human_Robot_Teams.pdf', '_blank')">
+                            <div class="research-entry-title"><b>Inferring Belief States in Partially-Observable Human-Robot Teams</b></div>
+                            <div class="research-entry-tools"><i>Conference Proceedings of IEEE/RSJ IROS '24</i></div>
+                            <div class="big-space"></div>
+                            <div class="research-entry-tools"><b>J. Kolb</b>, K. Feigh</div>
+                            <div class="big-space"></div>
+                            <div class="project-entry-desc">Presents an architecture for predicting user responses to situation responses in human-robot teams, evaluated on a modified OvercookedAI domain.</div>
+                            <div class="big-space"></div>
+                        </div>
+                        <div class="research-entry-hover"><svg class="research-paper-icon" style="width:24px;height:24px" viewBox="0 0 384 512"><path d="M320 464C328.8 464 336 456.8 336 448V416H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V416H48V448C48 456.8 55.16 464 64 464H320zM256 160C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V192H0V64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V192H336V160H256zM88 224C118.9 224 144 249.1 144 280C144 310.9 118.9 336 88 336H80V368C80 376.8 72.84 384 64 384C55.16 384 48 376.8 48 368V240C48 231.2 55.16 224 64 224H88zM112 280C112 266.7 101.3 256 88 256H80V304H88C101.3 304 112 293.3 112 280zM160 240C160 231.2 167.2 224 176 224H200C226.5 224 248 245.5 248 272V336C248 362.5 226.5 384 200 384H176C167.2 384 160 376.8 160 368V240zM192 352H200C208.8 352 216 344.8 216 336V272C216 263.2 208.8 256 200 256H192V352zM336 224C344.8 224 352 231.2 352 240C352 248.8 344.8 256 336 256H304V288H336C344.8 288 352 295.2 352 304C352 312.8 344.8 320 336 320H304V368C304 376.8 296.8 384 288 384C279.2 384 272 376.8 272 368V240C272 231.2 279.2 224 288 224H336z"/></svg></div>
+                    </div>
+                </div>
+                <div class="break-space"></div>
+            </div>
+            <div>
+                <div class="research-container">
+                    <div class="research-subcontainer">
+                        <div class="research-entry research-entry-hover" onclick="window.open('https://jackkolb.com/pdf/HFES_24_Joint_Intelligence_Surveillance_and_Reconnaissance_Mission_Collaboration_with_Autonomous_Pilots.pdf', '_blank')">
+                            <div class="research-entry-title"><b>Joint Intelligence, Surveillance, and Reconnaissance Mission Collaboration with Autonomous Pilots</b></div>
+                            <div class="research-entry-tools"><i>Conference Proceedings of HFES ASPIRE '24</i></div>
+                            <div class="big-space"></div>
+                            <div class="research-entry-tools">R. Agbeyibor, V. Ruia,  <b>J. Kolb</b>, K. Feigh</div>
+                            <div class="big-space"></div>
+                            <div class="project-entry-desc">Users participate in a simulated ISR domain with an autonomous pilot, and provide feedback on several modes of autonomy we presented them with.</div>
+                            <div class="big-space"></div>
+                        </div>
+                        <div class="research-entry-hover"><svg class="research-paper-icon" style="width:24px;height:24px" viewBox="0 0 384 512"><path d="M320 464C328.8 464 336 456.8 336 448V416H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V416H48V448C48 456.8 55.16 464 64 464H320zM256 160C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V192H0V64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V192H336V160H256zM88 224C118.9 224 144 249.1 144 280C144 310.9 118.9 336 88 336H80V368C80 376.8 72.84 384 64 384C55.16 384 48 376.8 48 368V240C48 231.2 55.16 224 64 224H88zM112 280C112 266.7 101.3 256 88 256H80V304H88C101.3 304 112 293.3 112 280zM160 240C160 231.2 167.2 224 176 224H200C226.5 224 248 245.5 248 272V336C248 362.5 226.5 384 200 384H176C167.2 384 160 376.8 160 368V240zM192 352H200C208.8 352 216 344.8 216 336V272C216 263.2 208.8 256 200 256H192V352zM336 224C344.8 224 352 231.2 352 240C352 248.8 344.8 256 336 256H304V288H336C344.8 288 352 295.2 352 304C352 312.8 344.8 320 336 320H304V368C304 376.8 296.8 384 288 384C279.2 384 272 376.8 272 368V240C272 231.2 279.2 224 288 224H336z"/></svg></div>
+                    </div>
+                </div>
+                <div class="break-space"></div>
+            </div>
+            <div>
+                <div class="research-container">
+                    <div class="research-subcontainer">
+                        <div class="research-entry research-entry-hover" onclick="window.open('https://jackkolb.com/pdf/DASC_24_Towards_Safe_Collaboration_Between_Autonomous_Pilots_and_Human_Crews_for_Intelligence_Surveillance_and_Reconnaissance.pdf', '_blank')">
+                            <div class="research-entry-title"><b>Towards Safe Collaboration Between Autonomous Pilots and Human Crews for Intelligence, Surveillance, and Reconnaissance</b></div>
+                            <div class="research-entry-tools"><i>Conference Proceedings of IEEE DASC '24</i></div>
+                            <div class="big-space"></div>
+                            <div class="research-entry-tools">R. Agbeyibor, V. Ruia,  <b>J. Kolb</b>, C. Cortes, T. Mancao, S. Coogan, K. Feigh</div>
+                            <div class="big-space"></div>
+                            <div class="project-entry-desc">Control barrier functions are used to control an autonomous pilot of an ISR aircraft with a human teammate.</div>
+                            <div class="big-space"></div>
+                        </div>
+                        <div class="research-entry-hover"><svg class="research-paper-icon" style="width:24px;height:24px" viewBox="0 0 384 512"><path d="M320 464C328.8 464 336 456.8 336 448V416H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V416H48V448C48 456.8 55.16 464 64 464H320zM256 160C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V192H0V64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V192H336V160H256zM88 224C118.9 224 144 249.1 144 280C144 310.9 118.9 336 88 336H80V368C80 376.8 72.84 384 64 384C55.16 384 48 376.8 48 368V240C48 231.2 55.16 224 64 224H88zM112 280C112 266.7 101.3 256 88 256H80V304H88C101.3 304 112 293.3 112 280zM160 240C160 231.2 167.2 224 176 224H200C226.5 224 248 245.5 248 272V336C248 362.5 226.5 384 200 384H176C167.2 384 160 376.8 160 368V240zM192 352H200C208.8 352 216 344.8 216 336V272C216 263.2 208.8 256 200 256H192V352zM336 224C344.8 224 352 231.2 352 240C352 248.8 344.8 256 336 256H304V288H336C344.8 288 352 295.2 352 304C352 312.8 344.8 320 336 320H304V368C304 376.8 296.8 384 288 384C279.2 384 272 376.8 272 368V240C272 231.2 279.2 224 288 224H336z"/></svg></div>
+                    </div>
+                </div>
+                <div class="break-space"></div>
+            </div>
+            <div>
+                <div class="research-container">
+                    <div class="research-subcontainer">
+                        <div class="research-entry research-entry-hover" onclick="window.open('https://jackkolb.com/pdf/AVIATION_24_Run_Time_Assurance_and_Human_AI_Fluency_in_Manned_Autonomous_Intelligence_Surveillance_and_Reconnaissance.pdf', '_blank')">
+                            <div class="research-entry-title"><b>Run Time Assurance and Human AI Fluency in Manned Autonomous Intelligence Surveillance and Reconnaissance</b></div>
+                            <div class="research-entry-tools"><i>Conference Proceedings of the AIAA Aviation '24</i></div>
+                            <div class="big-space"></div>
+                            <div class="research-entry-tools">R. Agbeyibor, V. Ruia, C. Cortes, <b>J. Kolb</b>, S. Coogan, K. Feigh</div>
+                            <div class="big-space"></div>
+                            <div class="project-entry-desc">Users participate in a simulated ISR domain with an autonomous pilot, we evaluate the team's mission performance and fluency across several operational modes.</div>
+                            <div class="big-space"></div>
+                        </div>
+                        <div class="research-entry-hover"><svg class="research-paper-icon" style="width:24px;height:24px" viewBox="0 0 384 512"><path d="M320 464C328.8 464 336 456.8 336 448V416H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V416H48V448C48 456.8 55.16 464 64 464H320zM256 160C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V192H0V64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V192H336V160H256zM88 224C118.9 224 144 249.1 144 280C144 310.9 118.9 336 88 336H80V368C80 376.8 72.84 384 64 384C55.16 384 48 376.8 48 368V240C48 231.2 55.16 224 64 224H88zM112 280C112 266.7 101.3 256 88 256H80V304H88C101.3 304 112 293.3 112 280zM160 240C160 231.2 167.2 224 176 224H200C226.5 224 248 245.5 248 272V336C248 362.5 226.5 384 200 384H176C167.2 384 160 376.8 160 368V240zM192 352H200C208.8 352 216 344.8 216 336V272C216 263.2 208.8 256 200 256H192V352zM336 224C344.8 224 352 231.2 352 240C352 248.8 344.8 256 336 256H304V288H336C344.8 288 352 295.2 352 304C352 312.8 344.8 320 336 320H304V368C304 376.8 296.8 384 288 384C279.2 384 272 376.8 272 368V240C272 231.2 279.2 224 288 224H336z"/></svg></div>
+                    </div>
+                </div>
+                <div class="break-space"></div>
+            </div>
+            <div>
+                <div class="research-container">
+                    <div class="research-subcontainer">
+                        <div class="research-entry research-entry-hover" onclick="window.open('https://jackkolb.com/pdf/SciTech_24_Impact_of_Abstraction_Levels_of_Context_Information_on_AI_Advised_Decision_Making_for_an_Entry_Descent_and_Landing_Task.pdf', '_blank')">
+                            <div class="research-entry-title"><b>Impact of Abstraction Levels of Context Information on AI-Advised Decision Making for an Entry Descent and Landing Task</b></div>
+                            <div class="research-entry-tools"><i>Conference Proceedings of AIAA SciTech '24</i></div>
+                            <div class="big-space"></div>
+                            <div class="research-entry-tools">D. Srivastava, <b>J. Kolb</b>, and K. Feigh</div>
+                            <div class="big-space"></div>
+                            <div class="project-entry-desc">A joint human-robot decision making task is structured into a three-step process, improving task performance, user trust, and user situation awareness.</div>
+                            <div class="big-space"></div>
+                        </div>
+                        <div class="research-entry-hover"><svg class="research-paper-icon" style="width:24px;height:24px" viewBox="0 0 384 512"><path d="M320 464C328.8 464 336 456.8 336 448V416H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V416H48V448C48 456.8 55.16 464 64 464H320zM256 160C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V192H0V64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V192H336V160H256zM88 224C118.9 224 144 249.1 144 280C144 310.9 118.9 336 88 336H80V368C80 376.8 72.84 384 64 384C55.16 384 48 376.8 48 368V240C48 231.2 55.16 224 64 224H88zM112 280C112 266.7 101.3 256 88 256H80V304H88C101.3 304 112 293.3 112 280zM160 240C160 231.2 167.2 224 176 224H200C226.5 224 248 245.5 248 272V336C248 362.5 226.5 384 200 384H176C167.2 384 160 376.8 160 368V240zM192 352H200C208.8 352 216 344.8 216 336V272C216 263.2 208.8 256 200 256H192V352zM336 224C344.8 224 352 231.2 352 240C352 248.8 344.8 256 336 256H304V288H336C344.8 288 352 295.2 352 304C352 312.8 344.8 320 336 320H304V368C304 376.8 296.8 384 288 384C279.2 384 272 376.8 272 368V240C272 231.2 279.2 224 288 224H336z"/></svg></div>
+                    </div>
+                </div>
+                <div class="break-space"></div>
+            </div>
+            <div>
+                <div class="research-container">
+                    <div class="research-subcontainer">
+                        <div class="research-entry research-entry-hover" onclick="window.open('https://jackkolb.com/pdf/IROS_23_Effects_of_Robot_Motion_on_Comfort_Dynamics_of_Novice_Users_in_Close_Proximity_Human_Robot_Interactions.pdf', '_blank')">
+                            <div class="research-entry-title"><b>The Effects of Robot Motion on Comfort Dynamics of Novice Users in Close-Proximity Human-Robot Interactions</b></div>
+                            <div class="research-entry-tools"><i>Conference Proceedings of IEEE/RSJ IROS '23</i></div>
+                            <div class="big-space"></div>
+                            <div class="research-entry-tools">P. Howell, *<b>J. Kolb</b>, *Y. Liu, and H. Ravichandar</div>
+                            <div class="big-space"></div>
+                            <div class="project-entry-desc">User comfort with various robot motion planning strategies is assessed in a close-proximity collaborative assembly task.</div>
+                            <div class="big-space"></div>
+                        </div>
+                        <div class="research-entry-hover"><svg class="research-paper-icon" style="width:24px;height:24px" viewBox="0 0 384 512"><path d="M320 464C328.8 464 336 456.8 336 448V416H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V416H48V448C48 456.8 55.16 464 64 464H320zM256 160C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V192H0V64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V192H336V160H256zM88 224C118.9 224 144 249.1 144 280C144 310.9 118.9 336 88 336H80V368C80 376.8 72.84 384 64 384C55.16 384 48 376.8 48 368V240C48 231.2 55.16 224 64 224H88zM112 280C112 266.7 101.3 256 88 256H80V304H88C101.3 304 112 293.3 112 280zM160 240C160 231.2 167.2 224 176 224H200C226.5 224 248 245.5 248 272V336C248 362.5 226.5 384 200 384H176C167.2 384 160 376.8 160 368V240zM192 352H200C208.8 352 216 344.8 216 336V272C216 263.2 208.8 256 200 256H192V352zM336 224C344.8 224 352 231.2 352 240C352 248.8 344.8 256 336 256H304V288H336C344.8 288 352 295.2 352 304C352 312.8 344.8 320 336 320H304V368C304 376.8 296.8 384 288 384C279.2 384 272 376.8 272 368V240C272 231.2 279.2 224 288 224H336z"/></svg></div>
+                    </div>
+                </div>
+                <div class="break-space"></div>
+            </div>
+            <div>
+                <div class="research-container">
+                    <div class="research-subcontainer">
+                        <div class="research-entry research-entry-hover" onclick="window.open('https://jackkolb.com/pdf/ROMAN_23_Structuring_Shared_Decision_Making_in_Human_Robot_Teams.pdf', '_blank')">
+                            <div class="research-entry-title"><b>The Effects of Inaccurate Decision-Support Systems on Structured Shared Decision-Making for Human-Robot Teams</b></div>
+                            <div class="research-entry-tools"><i>Conference Proceedings of IEEE RO-MAN '23</i></div>
+                            <div class="big-space"></div>
+                            <div class="research-entry-tools">*<b>J. Kolb</b>, *D. Srivastava, K. Feigh</div>
+                            <div class="big-space"></div>
+                            <div class="project-entry-desc">Explores the impact of the type of robot recommendation error on mission performance in a structured shared decision-making domain.</div>
+                            <div class="big-space"></div>
+                        </div>
+                        <div class="research-entry-hover"><svg class="research-paper-icon" style="width:24px;height:24px" viewBox="0 0 384 512"><path d="M320 464C328.8 464 336 456.8 336 448V416H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V416H48V448C48 456.8 55.16 464 64 464H320zM256 160C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V192H0V64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V192H336V160H256zM88 224C118.9 224 144 249.1 144 280C144 310.9 118.9 336 88 336H80V368C80 376.8 72.84 384 64 384C55.16 384 48 376.8 48 368V240C48 231.2 55.16 224 64 224H88zM112 280C112 266.7 101.3 256 88 256H80V304H88C101.3 304 112 293.3 112 280zM160 240C160 231.2 167.2 224 176 224H200C226.5 224 248 245.5 248 272V336C248 362.5 226.5 384 200 384H176C167.2 384 160 376.8 160 368V240zM192 352H200C208.8 352 216 344.8 216 336V272C216 263.2 208.8 256 200 256H192V352zM336 224C344.8 224 352 231.2 352 240C352 248.8 344.8 256 336 256H304V288H336C344.8 288 352 295.2 352 304C352 312.8 344.8 320 336 320H304V368C304 376.8 296.8 384 288 384C279.2 384 272 376.8 272 368V240C272 231.2 279.2 224 288 224H336z"/></svg></div>
+                    </div>
+                </div>
+                <div class="break-space"></div>
+            </div>
+            <div>
+                <div class="research-container">
+                    <div class="research-subcontainer">
+                        <div class="research-entry research-entry-hover" onclick="window.open('https://jackkolb.com/pdf/ROMAN_22_Leveraging_Cognitive_States_in_Human_Robot_Teaming.pdf', '_blank')">
+                            <div class="research-entry-title"><b>Leveraging Cognitive States in Human-Robot Teaming</b></div>
+                            <div class="research-entry-tools"><i>Conference Proceedings of IEEE RO-MAN '22, <b>[Best Student Paper Finalist, 3/237]</b></i></div>
+                            <div class="big-space"></div>
+                            <div class="research-entry-tools"><b>J. Kolb</b>, H. Ravichandar, and S. Chernova</div>
+                            <div class="big-space"></div>
+                            <div class="project-entry-desc">Measurements of user cognitive states are used to inform a role assignment algorithm and improve teaming performance.</div>
+                            <div class="big-space"></div>
+                        </div>
+                        <div class="research-entry-hover"><svg class="research-paper-icon" style="width:24px;height:24px" viewBox="0 0 384 512"><path d="M320 464C328.8 464 336 456.8 336 448V416H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V416H48V448C48 456.8 55.16 464 64 464H320zM256 160C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V192H0V64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V192H336V160H256zM88 224C118.9 224 144 249.1 144 280C144 310.9 118.9 336 88 336H80V368C80 376.8 72.84 384 64 384C55.16 384 48 376.8 48 368V240C48 231.2 55.16 224 64 224H88zM112 280C112 266.7 101.3 256 88 256H80V304H88C101.3 304 112 293.3 112 280zM160 240C160 231.2 167.2 224 176 224H200C226.5 224 248 245.5 248 272V336C248 362.5 226.5 384 200 384H176C167.2 384 160 376.8 160 368V240zM192 352H200C208.8 352 216 344.8 216 336V272C216 263.2 208.8 256 200 256H192V352zM336 224C344.8 224 352 231.2 352 240C352 248.8 344.8 256 336 256H304V288H336C344.8 288 352 295.2 352 304C352 312.8 344.8 320 336 320H304V368C304 376.8 296.8 384 288 384C279.2 384 272 376.8 272 368V240C272 231.2 279.2 224 288 224H336z"/></svg></div>
+                    </div>
+                </div>
+                <div class="break-space"></div>
+            </div>
+            <div>
+                <div class="research-container">
+                    <div class="research-subcontainer">
+                        <div class="research-entry research-entry-hover" onclick="window.open('https://jackkolb.com/pdf/IJCAI_22_Constrained_RL_for_Dexterous_Manipulation.pdf', '_blank')">
+                            <div class="research-entry-title"><b>Safe Dexterous Manipulation Using Geometric Boundary Constraints</b></div>
+                            <div class="research-entry-tools"><i>Workshop Proceedings of IJCAI '22 (Safe RL, non-archival)</i></div>
+                            <div class="big-space"></div>
+                            <div class="research-entry-tools">A. Jain, <b>J. Kolb</b>, and H. Ravichandar</div>
+                            <div class="big-space"></div>
+                            <div class="project-entry-desc">Instance-specific geometric boundary constraints are used with reinforcement learning algorithms to obtain safe high-dimensional robot hand manipulation.</div>
+                            <div class="big-space"></div>
+                        </div>
+                        <div class="research-entry-hover"><svg class="research-paper-icon" style="width:24px;height:24px" viewBox="0 0 384 512"><path d="M320 464C328.8 464 336 456.8 336 448V416H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V416H48V448C48 456.8 55.16 464 64 464H320zM256 160C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V192H0V64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V192H336V160H256zM88 224C118.9 224 144 249.1 144 280C144 310.9 118.9 336 88 336H80V368C80 376.8 72.84 384 64 384C55.16 384 48 376.8 48 368V240C48 231.2 55.16 224 64 224H88zM112 280C112 266.7 101.3 256 88 256H80V304H88C101.3 304 112 293.3 112 280zM160 240C160 231.2 167.2 224 176 224H200C226.5 224 248 245.5 248 272V336C248 362.5 226.5 384 200 384H176C167.2 384 160 376.8 160 368V240zM192 352H200C208.8 352 216 344.8 216 336V272C216 263.2 208.8 256 200 256H192V352zM336 224C344.8 224 352 231.2 352 240C352 248.8 344.8 256 336 256H304V288H336C344.8 288 352 295.2 352 304C352 312.8 344.8 320 336 320H304V368C304 376.8 296.8 384 288 384C279.2 384 272 376.8 272 368V240C272 231.2 279.2 224 288 224H336z"/></svg></div>
+                    </div>
+                </div>
+                <div class="break-space"></div>
+            </div>
+            <div>
+                <div class="research-container">
+                    <div class="research-subcontainer">
+                        <div class="research-entry research-entry-hover" onclick="window.open('https://arxiv.org/pdf/2204.07631.pdf', '_blank')">
+                            <div class="research-entry-title"><b>Evaluating the Effectiveness of Corrective Demonstrations and a Low-Cost Sensor for Dexterous Manipulation</b></div>
+                            <div class="research-entry-tools"><i>Workshop Proceedings of IEEE/ACM HRI '22 (MLHRC, non-archival)</i></div>
+                            <div class="big-space"></div>
+                            <div class="research-entry-tools">*A. Jain, *<b>J. Kolb</b>, J. Abbess, and H. Ravichandar</div>
+                            <div class="big-space"></div>
+                            <div class="project-entry-desc">Explores the use of DAGGER-like corrections, and demonstrations from a low-cost pose sensor, to improve robot hand performance at a "pick and place" task.</div>
+                            <div class="big-space"></div>
+                        </div>
+                        <div class="research-entry-hover"><svg class="research-paper-icon" style="width:24px;height:24px" viewBox="0 0 384 512"><path d="M320 464C328.8 464 336 456.8 336 448V416H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V416H48V448C48 456.8 55.16 464 64 464H320zM256 160C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V192H0V64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V192H336V160H256zM88 224C118.9 224 144 249.1 144 280C144 310.9 118.9 336 88 336H80V368C80 376.8 72.84 384 64 384C55.16 384 48 376.8 48 368V240C48 231.2 55.16 224 64 224H88zM112 280C112 266.7 101.3 256 88 256H80V304H88C101.3 304 112 293.3 112 280zM160 240C160 231.2 167.2 224 176 224H200C226.5 224 248 245.5 248 272V336C248 362.5 226.5 384 200 384H176C167.2 384 160 376.8 160 368V240zM192 352H200C208.8 352 216 344.8 216 336V272C216 263.2 208.8 256 200 256H192V352zM336 224C344.8 224 352 231.2 352 240C352 248.8 344.8 256 336 256H304V288H336C344.8 288 352 295.2 352 304C352 312.8 344.8 320 336 320H304V368C304 376.8 296.8 384 288 384C279.2 384 272 376.8 272 368V240C272 231.2 279.2 224 288 224H336z"/></svg></div>
+                    </div>
+                </div>
+                <div class="break-space"></div>
+            </div>
+            <div>
+                <div class="research-container">
+                    <div class="research-subcontainer">
+                        <div class="research-entry research-entry-hover" onclick="window.open('https://jackkolb.com/pdf/ROMAN_21_Predicting_Individual_Performance_in_Human_Robot_Teaming.pdf', '_blank')">
+                            <div class="research-entry-title"><b>Predicting Individual Human Performance in Human-Robot Teaming</b></div>
+                            <div class="research-entry-tools"><i>Conference Proceedings of IEEE RO-MAN '21</i></div>
+                            <div class="big-space"></div>
+                            <div class="research-entry-tools"><b>J. Kolb</b>, M. Kishore, K. Shaw, H. Ravichandar, and S. Chernova</div>
+                            <div class="big-space"></div>
+                            <div class="project-entry-desc">Through a user study we find that scores from user cognitive skill tests correlate to performance at robot teleoperation tasks.</div>
+                            <div class="big-space"></div>
+                        </div>
+                        <div class="research-entry-hover"><svg class="research-paper-icon" style="width:24px;height:24px" viewBox="0 0 384 512"><path d="M320 464C328.8 464 336 456.8 336 448V416H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V416H48V448C48 456.8 55.16 464 64 464H320zM256 160C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V192H0V64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V192H336V160H256zM88 224C118.9 224 144 249.1 144 280C144 310.9 118.9 336 88 336H80V368C80 376.8 72.84 384 64 384C55.16 384 48 376.8 48 368V240C48 231.2 55.16 224 64 224H88zM112 280C112 266.7 101.3 256 88 256H80V304H88C101.3 304 112 293.3 112 280zM160 240C160 231.2 167.2 224 176 224H200C226.5 224 248 245.5 248 272V336C248 362.5 226.5 384 200 384H176C167.2 384 160 376.8 160 368V240zM192 352H200C208.8 352 216 344.8 216 336V272C216 263.2 208.8 256 200 256H192V352zM336 224C344.8 224 352 231.2 352 240C352 248.8 344.8 256 336 256H304V288H336C344.8 288 352 295.2 352 304C352 312.8 344.8 320 336 320H304V368C304 376.8 296.8 384 288 384C279.2 384 272 376.8 272 368V240C272 231.2 279.2 224 288 224H336z"/></svg></div>
+                    </div>
+                </div>
+                <div class="break-space"></div>
+            </div>
+        </section>
+
+        <section id="projects" style="display: none;">
+            <div>
+                <div class="project-container">
+                    <div class="project-subcontainer">
+                        <div class="project-entry project-entry-hover" onclick="window.open('https://github.com/gt-cec/tmm-hai', '_blank')">
+                            <div class="project-entry-title"><b>Partially-Observable OvercookedAI Domain</b></div>
+                            <div class="project-entry-tools"><span style='color:#995533'><b>[Research] </b></span><i>Python, PyGame, HTML, JS</i></div>
+                            <div class="big-space"></div>
+                            <div class="project-entry-desc">A revamped OvercookedAI domain that actually works, supports partial-observability, and has a pretty UI.</div>
+                            <div class="big-space"></div>
+                        </div>
+                        <div class="project-entry-hover"><svg class="project-github-icon" fill="black" viewBox="0 0 48 48" width="24" height="24"><path d="M23.928 1.15C11 1.15.514 11.638.514 24.566c0 10.343 6.75 19.105 15.945 22.265 1.148.144 1.58-.574 1.58-1.15v-4.02c-6.465 1.436-7.902-3.16-7.902-3.16-1.005-2.73-2.586-3.45-2.586-3.45-2.154-1.435.144-1.435.144-1.435 2.298.144 3.59 2.442 3.59 2.442 2.156 3.59 5.46 2.586 6.753 2.01.142-1.58.86-2.585 1.435-3.16-5.17-.574-10.63-2.585-10.63-11.635 0-2.585.862-4.596 2.442-6.32-.287-.575-1.005-3.017.288-6.177 0 0 2.01-.574 6.464 2.442 1.866-.574 3.877-.718 5.888-.718 2.01 0 4.022.286 5.89.717 4.453-3.016 6.464-2.442 6.464-2.442 1.293 3.16.43 5.602.287 6.177a9.29 9.29 0 0 1 2.44 6.32c0 9.05-5.458 10.918-10.63 11.492.863.718 1.58 2.155 1.58 4.31v6.464c0 .574.432 1.292 1.58 1.15 9.338-3.16 15.946-11.924 15.946-22.266-.143-12.785-10.63-23.27-23.558-23.27z" clip-rule="evenodd" fill-rule="evenodd"/></svg></div>
+                    </div>
+                </div>
+                <div class="break-space"></div>
+            </div>
+            <div>
+                <div class="project-container">
+                    <div class="project-subcontainer">
+                        <div class="project-entry project-entry-hover" onclick="window.open('https://github.com/gt-cec/maisr', '_blank')">
+                            <div class="project-entry-title"><b>MAISR: Multi-Agent ISR Gym for Reinforcement Learning</b></div>
+                            <div class="project-entry-tools"><span style='color:#995533'><b>[Research] </b></span><i>Python, PyGame, Gym</i></div>
+                            <div class="big-space"></div>
+                            <div class="project-entry-desc">A multi-agent aircraft ISR environment, suitable for reinforcement learning and human-robot teaming.</div>
+                            <div class="big-space"></div>
+                        </div>
+                        <div class="project-entry-hover"><svg class="project-github-icon" fill="black" viewBox="0 0 48 48" width="24" height="24"><path d="M23.928 1.15C11 1.15.514 11.638.514 24.566c0 10.343 6.75 19.105 15.945 22.265 1.148.144 1.58-.574 1.58-1.15v-4.02c-6.465 1.436-7.902-3.16-7.902-3.16-1.005-2.73-2.586-3.45-2.586-3.45-2.154-1.435.144-1.435.144-1.435 2.298.144 3.59 2.442 3.59 2.442 2.156 3.59 5.46 2.586 6.753 2.01.142-1.58.86-2.585 1.435-3.16-5.17-.574-10.63-2.585-10.63-11.635 0-2.585.862-4.596 2.442-6.32-.287-.575-1.005-3.017.288-6.177 0 0 2.01-.574 6.464 2.442 1.866-.574 3.877-.718 5.888-.718 2.01 0 4.022.286 5.89.717 4.453-3.016 6.464-2.442 6.464-2.442 1.293 3.16.43 5.602.287 6.177a9.29 9.29 0 0 1 2.44 6.32c0 9.05-5.458 10.918-10.63 11.492.863.718 1.58 2.155 1.58 4.31v6.464c0 .574.432 1.292 1.58 1.15 9.338-3.16 15.946-11.924 15.946-22.266-.143-12.785-10.63-23.27-23.558-23.27z" clip-rule="evenodd" fill-rule="evenodd"/></svg></div>
+                    </div>
+                </div>
+                <div class="break-space"></div>
+            </div>
+            <div>
+                <div class="project-container">
+                    <div class="project-subcontainer">
+                        <div class="project-entry project-entry-hover" onclick="window.open('https://github.com/GT-RAIL/cognitive-states-in-human-robot-teaming', '_blank')">
+                            <div class="project-entry-title"><b>Multi-Agent Robot Operation Scenarios</b></div>
+                            <div class="project-entry-tools"><span style='color:#995533'><b>[Research] </b></span><i>Python, Flask, HTML, CSS, ROS</i></div>
+                            <div class="big-space"></div>
+                            <div class="project-entry-desc">A set of three browser-controlled multi-robot operation scenarios in simulation.</div>
+                            <div class="big-space"></div>
+                        </div>
+                        <div class="project-entry-hover"><svg class="project-github-icon" fill="black" viewBox="0 0 48 48" width="24" height="24"><path d="M23.928 1.15C11 1.15.514 11.638.514 24.566c0 10.343 6.75 19.105 15.945 22.265 1.148.144 1.58-.574 1.58-1.15v-4.02c-6.465 1.436-7.902-3.16-7.902-3.16-1.005-2.73-2.586-3.45-2.586-3.45-2.154-1.435.144-1.435.144-1.435 2.298.144 3.59 2.442 3.59 2.442 2.156 3.59 5.46 2.586 6.753 2.01.142-1.58.86-2.585 1.435-3.16-5.17-.574-10.63-2.585-10.63-11.635 0-2.585.862-4.596 2.442-6.32-.287-.575-1.005-3.017.288-6.177 0 0 2.01-.574 6.464 2.442 1.866-.574 3.877-.718 5.888-.718 2.01 0 4.022.286 5.89.717 4.453-3.016 6.464-2.442 6.464-2.442 1.293 3.16.43 5.602.287 6.177a9.29 9.29 0 0 1 2.44 6.32c0 9.05-5.458 10.918-10.63 11.492.863.718 1.58 2.155 1.58 4.31v6.464c0 .574.432 1.292 1.58 1.15 9.338-3.16 15.946-11.924 15.946-22.266-.143-12.785-10.63-23.27-23.558-23.27z" clip-rule="evenodd" fill-rule="evenodd"/></svg></div>
+                    </div>
+                </div>
+                <div class="break-space"></div>
+            </div>
+            <div>
+                <div class="project-container">
+                    <div class="project-subcontainer">
+                        <div class="project-entry project-entry-hover" onclick="window.open('https://github.com/GT-RAIL', '_blank')">
+                            <div class="project-entry-title"><b>Suite of Cognitive Skill Tests</b></div>
+                            <div class="project-entry-tools"><span style='color:#995533'><b>[Research] </b></span><i>Python, Flask, HTML, CSS</i></div>
+                            <div class="big-space"></div>
+                            <div class="project-entry-desc">A set of three short, simple, online tests to measure user cognitive skills.</div>
+                            <div class="big-space"></div>
+                        </div>
+                        <div class="project-entry-hover"><svg class="project-github-icon" fill="black" viewBox="0 0 48 48" width="24" height="24"><path d="M23.928 1.15C11 1.15.514 11.638.514 24.566c0 10.343 6.75 19.105 15.945 22.265 1.148.144 1.58-.574 1.58-1.15v-4.02c-6.465 1.436-7.902-3.16-7.902-3.16-1.005-2.73-2.586-3.45-2.586-3.45-2.154-1.435.144-1.435.144-1.435 2.298.144 3.59 2.442 3.59 2.442 2.156 3.59 5.46 2.586 6.753 2.01.142-1.58.86-2.585 1.435-3.16-5.17-.574-10.63-2.585-10.63-11.635 0-2.585.862-4.596 2.442-6.32-.287-.575-1.005-3.017.288-6.177 0 0 2.01-.574 6.464 2.442 1.866-.574 3.877-.718 5.888-.718 2.01 0 4.022.286 5.89.717 4.453-3.016 6.464-2.442 6.464-2.442 1.293 3.16.43 5.602.287 6.177a9.29 9.29 0 0 1 2.44 6.32c0 9.05-5.458 10.918-10.63 11.492.863.718 1.58 2.155 1.58 4.31v6.464c0 .574.432 1.292 1.58 1.15 9.338-3.16 15.946-11.924 15.946-22.266-.143-12.785-10.63-23.27-23.558-23.27z" clip-rule="evenodd" fill-rule="evenodd"/></svg></div>
+                    </div>
+                </div>
+                <div class="break-space"></div>
+            </div>
+            <div>
+                <div class="project-container">
+                    <div class="project-subcontainer">
+                        <div class="project-entry project-entry-hover" onclick="window.open('https://github.com/jackkolb/primafacia', '_blank')">
+                            <div class="project-entry-title"><b>FirstGlance</b></div>
+                            <div class="project-entry-tools"><span style='color:#ff33cc'><b>[Hackathon] </b></span><i>Python, Flask, HTML, CSS, SocketIO, Firebase, OpenCV</i></div>
+                            <div class="big-space"></div>
+                            <div class="project-entry-desc">A seamless patient checkup system, using facial recognition authentication.</div>
+                            <div class="big-space"></div>
+                        </div>
+                        <div class="project-entry-hover"><svg class="project-github-icon" fill="black" viewBox="0 0 48 48" width="24" height="24"><path d="M23.928 1.15C11 1.15.514 11.638.514 24.566c0 10.343 6.75 19.105 15.945 22.265 1.148.144 1.58-.574 1.58-1.15v-4.02c-6.465 1.436-7.902-3.16-7.902-3.16-1.005-2.73-2.586-3.45-2.586-3.45-2.154-1.435.144-1.435.144-1.435 2.298.144 3.59 2.442 3.59 2.442 2.156 3.59 5.46 2.586 6.753 2.01.142-1.58.86-2.585 1.435-3.16-5.17-.574-10.63-2.585-10.63-11.635 0-2.585.862-4.596 2.442-6.32-.287-.575-1.005-3.017.288-6.177 0 0 2.01-.574 6.464 2.442 1.866-.574 3.877-.718 5.888-.718 2.01 0 4.022.286 5.89.717 4.453-3.016 6.464-2.442 6.464-2.442 1.293 3.16.43 5.602.287 6.177a9.29 9.29 0 0 1 2.44 6.32c0 9.05-5.458 10.918-10.63 11.492.863.718 1.58 2.155 1.58 4.31v6.464c0 .574.432 1.292 1.58 1.15 9.338-3.16 15.946-11.924 15.946-22.266-.143-12.785-10.63-23.27-23.558-23.27z" clip-rule="evenodd" fill-rule="evenodd"/></svg></div>
+                    </div>
+                </div>
+                <div class="break-space"></div>
+            </div>
+            <div>
+                <div class="project-container">
+                    <div class="project-subcontainer">
+                        <div class="project-entry project-entry-hover" onclick="window.open('https://github.com/jackkolb/firewatch', '_blank')">
+                            <div class="project-entry-title"><b>Fire Watch</b></div>
+                            <div class="project-entry-tools"><span style='color:#ff33cc'><b>[Hackathon] </b></span><i>Python, Flask, HTML, CSS</i></div>
+                            <div class="big-space"></div>
+                            <div class="project-entry-desc">Uses machine learning to predict fire risk throughout California.</div>
+                            <div class="big-space"></div>
+                        </div>
+                        <div class="project-entry-hover"><svg class="project-github-icon" fill="black" viewBox="0 0 48 48" width="24" height="24"><path d="M23.928 1.15C11 1.15.514 11.638.514 24.566c0 10.343 6.75 19.105 15.945 22.265 1.148.144 1.58-.574 1.58-1.15v-4.02c-6.465 1.436-7.902-3.16-7.902-3.16-1.005-2.73-2.586-3.45-2.586-3.45-2.154-1.435.144-1.435.144-1.435 2.298.144 3.59 2.442 3.59 2.442 2.156 3.59 5.46 2.586 6.753 2.01.142-1.58.86-2.585 1.435-3.16-5.17-.574-10.63-2.585-10.63-11.635 0-2.585.862-4.596 2.442-6.32-.287-.575-1.005-3.017.288-6.177 0 0 2.01-.574 6.464 2.442 1.866-.574 3.877-.718 5.888-.718 2.01 0 4.022.286 5.89.717 4.453-3.016 6.464-2.442 6.464-2.442 1.293 3.16.43 5.602.287 6.177a9.29 9.29 0 0 1 2.44 6.32c0 9.05-5.458 10.918-10.63 11.492.863.718 1.58 2.155 1.58 4.31v6.464c0 .574.432 1.292 1.58 1.15 9.338-3.16 15.946-11.924 15.946-22.266-.143-12.785-10.63-23.27-23.558-23.27z" clip-rule="evenodd" fill-rule="evenodd"/></svg></div>
+                    </div>
+                </div>
+                <div class="break-space"></div>
+            </div>
+            <div>
+                <div class="project-container">
+                    <div class="project-subcontainer">
+                        <div class="project-entry project-entry-hover" onclick="window.open('https://github.com/jackkolb/syncopate', '_blank')">
+                            <div class="project-entry-title"><b>Syncopate</b></div>
+                            <div class="project-entry-tools"><i>Python, Flask, Bash</i></div>
+                            <div class="big-space"></div>
+                            <div class="project-entry-desc">Load balances and manages projects across a scalable network of devices.</div>
+                            <div class="big-space"></div>
+                        </div>
+                        <div class="project-entry-hover"><svg class="project-github-icon" fill="black" viewBox="0 0 48 48" width="24" height="24"><path d="M23.928 1.15C11 1.15.514 11.638.514 24.566c0 10.343 6.75 19.105 15.945 22.265 1.148.144 1.58-.574 1.58-1.15v-4.02c-6.465 1.436-7.902-3.16-7.902-3.16-1.005-2.73-2.586-3.45-2.586-3.45-2.154-1.435.144-1.435.144-1.435 2.298.144 3.59 2.442 3.59 2.442 2.156 3.59 5.46 2.586 6.753 2.01.142-1.58.86-2.585 1.435-3.16-5.17-.574-10.63-2.585-10.63-11.635 0-2.585.862-4.596 2.442-6.32-.287-.575-1.005-3.017.288-6.177 0 0 2.01-.574 6.464 2.442 1.866-.574 3.877-.718 5.888-.718 2.01 0 4.022.286 5.89.717 4.453-3.016 6.464-2.442 6.464-2.442 1.293 3.16.43 5.602.287 6.177a9.29 9.29 0 0 1 2.44 6.32c0 9.05-5.458 10.918-10.63 11.492.863.718 1.58 2.155 1.58 4.31v6.464c0 .574.432 1.292 1.58 1.15 9.338-3.16 15.946-11.924 15.946-22.266-.143-12.785-10.63-23.27-23.558-23.27z" clip-rule="evenodd" fill-rule="evenodd"/></svg></div>
+                    </div>
+                </div>
+                <div class="break-space"></div>
+            </div>
+            <div>
+                <div class="project-container">
+                    <div class="project-subcontainer">
+                        <div class="project-entry project-entry-hover" onclick="window.open('https://kolb.dev', '_blank')">
+                            <div class="project-entry-title"><b>kolb.dev</b></div>
+                            <div class="project-entry-tools"><i>PHP, Golang</i></div>
+                            <div class="big-space"></div>
+                            <div class="project-entry-desc">Small web projects worth hosting.</div>
+                            <div class="big-space"></div>
+                        </div>
+                        <div class="project-entry-hover"><svg class="project-github-icon" fill="black" viewBox="0 0 48 48" width="24" height="24"><path d="M23.928 1.15C11 1.15.514 11.638.514 24.566c0 10.343 6.75 19.105 15.945 22.265 1.148.144 1.58-.574 1.58-1.15v-4.02c-6.465 1.436-7.902-3.16-7.902-3.16-1.005-2.73-2.586-3.45-2.586-3.45-2.154-1.435.144-1.435.144-1.435 2.298.144 3.59 2.442 3.59 2.442 2.156 3.59 5.46 2.586 6.753 2.01.142-1.58.86-2.585 1.435-3.16-5.17-.574-10.63-2.585-10.63-11.635 0-2.585.862-4.596 2.442-6.32-.287-.575-1.005-3.017.288-6.177 0 0 2.01-.574 6.464 2.442 1.866-.574 3.877-.718 5.888-.718 2.01 0 4.022.286 5.89.717 4.453-3.016 6.464-2.442 6.464-2.442 1.293 3.16.43 5.602.287 6.177a9.29 9.29 0 0 1 2.44 6.32c0 9.05-5.458 10.918-10.63 11.492.863.718 1.58 2.155 1.58 4.31v6.464c0 .574.432 1.292 1.58 1.15 9.338-3.16 15.946-11.924 15.946-22.266-.143-12.785-10.63-23.27-23.558-23.27z" clip-rule="evenodd" fill-rule="evenodd"/></svg></div>
+                    </div>
+                </div>
+                <div class="break-space"></div>
+            </div>
+            <div>
+                <div class="project-container">
+                    <div class="project-subcontainer">
+                        <div class="project-entry project-entry-hover" onclick="window.open('https://github.com/jackkolb/littlebox', '_blank')">
+                            <div class="project-entry-title"><b>Littlebox</b></div>
+                            <div class="project-entry-tools"><i>C++, Boost</i></div>
+                            <div class="big-space"></div>
+                            <div class="project-entry-desc">A cross-platform, remote-accessed file server.</div>
+                            <div class="big-space"></div>
+                        </div>
+                        <div class="project-entry-hover"><svg class="project-github-icon" fill="black" viewBox="0 0 48 48" width="24" height="24"><path d="M23.928 1.15C11 1.15.514 11.638.514 24.566c0 10.343 6.75 19.105 15.945 22.265 1.148.144 1.58-.574 1.58-1.15v-4.02c-6.465 1.436-7.902-3.16-7.902-3.16-1.005-2.73-2.586-3.45-2.586-3.45-2.154-1.435.144-1.435.144-1.435 2.298.144 3.59 2.442 3.59 2.442 2.156 3.59 5.46 2.586 6.753 2.01.142-1.58.86-2.585 1.435-3.16-5.17-.574-10.63-2.585-10.63-11.635 0-2.585.862-4.596 2.442-6.32-.287-.575-1.005-3.017.288-6.177 0 0 2.01-.574 6.464 2.442 1.866-.574 3.877-.718 5.888-.718 2.01 0 4.022.286 5.89.717 4.453-3.016 6.464-2.442 6.464-2.442 1.293 3.16.43 5.602.287 6.177a9.29 9.29 0 0 1 2.44 6.32c0 9.05-5.458 10.918-10.63 11.492.863.718 1.58 2.155 1.58 4.31v6.464c0 .574.432 1.292 1.58 1.15 9.338-3.16 15.946-11.924 15.946-22.266-.143-12.785-10.63-23.27-23.558-23.27z" clip-rule="evenodd" fill-rule="evenodd"/></svg></div>
+                    </div>
+                </div>
+                <div class="break-space"></div>
+            </div>
+            <div>
+                <div class="project-container">
+                    <div class="project-subcontainer">
+                        <div class="project-entry project-entry-hover" onclick="window.open('https://github.com/jackkolb/electioncat', '_blank')">
+                            <div class="project-entry-title"><b>ElectionCat</b></div>
+                            <div class="project-entry-tools"><span style='color:#ff33cc'><b>[Hackathon] </b></span><i>HTML, CSS, Python, Flask, Azure</i></div>
+                            <div class="big-space"></div>
+                            <div class="project-entry-desc">A simple, beautiful, election system for student organizations.</div>
+                            <div class="big-space"></div>
+                        </div>
+                        <div class="project-entry-hover"><svg class="project-github-icon" fill="black" viewBox="0 0 48 48" width="24" height="24"><path d="M23.928 1.15C11 1.15.514 11.638.514 24.566c0 10.343 6.75 19.105 15.945 22.265 1.148.144 1.58-.574 1.58-1.15v-4.02c-6.465 1.436-7.902-3.16-7.902-3.16-1.005-2.73-2.586-3.45-2.586-3.45-2.154-1.435.144-1.435.144-1.435 2.298.144 3.59 2.442 3.59 2.442 2.156 3.59 5.46 2.586 6.753 2.01.142-1.58.86-2.585 1.435-3.16-5.17-.574-10.63-2.585-10.63-11.635 0-2.585.862-4.596 2.442-6.32-.287-.575-1.005-3.017.288-6.177 0 0 2.01-.574 6.464 2.442 1.866-.574 3.877-.718 5.888-.718 2.01 0 4.022.286 5.89.717 4.453-3.016 6.464-2.442 6.464-2.442 1.293 3.16.43 5.602.287 6.177a9.29 9.29 0 0 1 2.44 6.32c0 9.05-5.458 10.918-10.63 11.492.863.718 1.58 2.155 1.58 4.31v6.464c0 .574.432 1.292 1.58 1.15 9.338-3.16 15.946-11.924 15.946-22.266-.143-12.785-10.63-23.27-23.558-23.27z" clip-rule="evenodd" fill-rule="evenodd"/></svg></div>
+                    </div>
+                </div>
+                <div class="break-space"></div>
+            </div>
+            <div>
+                <div class="project-container">
+                    <div class="project-subcontainer">
+                        <div class="project-entry project-entry-hover" onclick="window.open('https://github.com/jackkolb/blindsight', '_blank')">
+                            <div class="project-entry-title"><b>Blindsight</b></div>
+                            <div class="project-entry-tools"><span style='color:#ff33cc'><b>[Hackathon] </b></span><i>Python, Flask, Raspberry Pi</i></div>
+                            <div class="big-space"></div>
+                            <div class="project-entry-desc">Translates your surroundings into haptic feedback.</div>
+                            <div class="big-space"></div>
+                        </div>
+                        <div class="project-entry-hover"><svg class="project-github-icon" fill="black" viewBox="0 0 48 48" width="24" height="24"><path d="M23.928 1.15C11 1.15.514 11.638.514 24.566c0 10.343 6.75 19.105 15.945 22.265 1.148.144 1.58-.574 1.58-1.15v-4.02c-6.465 1.436-7.902-3.16-7.902-3.16-1.005-2.73-2.586-3.45-2.586-3.45-2.154-1.435.144-1.435.144-1.435 2.298.144 3.59 2.442 3.59 2.442 2.156 3.59 5.46 2.586 6.753 2.01.142-1.58.86-2.585 1.435-3.16-5.17-.574-10.63-2.585-10.63-11.635 0-2.585.862-4.596 2.442-6.32-.287-.575-1.005-3.017.288-6.177 0 0 2.01-.574 6.464 2.442 1.866-.574 3.877-.718 5.888-.718 2.01 0 4.022.286 5.89.717 4.453-3.016 6.464-2.442 6.464-2.442 1.293 3.16.43 5.602.287 6.177a9.29 9.29 0 0 1 2.44 6.32c0 9.05-5.458 10.918-10.63 11.492.863.718 1.58 2.155 1.58 4.31v6.464c0 .574.432 1.292 1.58 1.15 9.338-3.16 15.946-11.924 15.946-22.266-.143-12.785-10.63-23.27-23.558-23.27z" clip-rule="evenodd" fill-rule="evenodd"/></svg></div>
+                    </div>
+                </div>
+                <div class="break-space"></div>
+            </div>
+            <div>
+                <div class="project-container">
+                    <div class="project-subcontainer">
+                        <div class="project-entry project-entry-hover" onclick="window.open('https://github.com/jackkolb/wicon', '_blank')">
+                            <div class="project-entry-title"><b>WiCon</b></div>
+                            <div class="project-entry-tools"><i>Python, GTK3</i></div>
+                            <div class="big-space"></div>
+                            <div class="project-entry-desc">A GUI WiFi manager for Linux desktops.</div>
+                            <div class="big-space"></div>
+                        </div>
+                        <div class="project-entry-hover"><svg class="project-github-icon" fill="black" viewBox="0 0 48 48" width="24" height="24"><path d="M23.928 1.15C11 1.15.514 11.638.514 24.566c0 10.343 6.75 19.105 15.945 22.265 1.148.144 1.58-.574 1.58-1.15v-4.02c-6.465 1.436-7.902-3.16-7.902-3.16-1.005-2.73-2.586-3.45-2.586-3.45-2.154-1.435.144-1.435.144-1.435 2.298.144 3.59 2.442 3.59 2.442 2.156 3.59 5.46 2.586 6.753 2.01.142-1.58.86-2.585 1.435-3.16-5.17-.574-10.63-2.585-10.63-11.635 0-2.585.862-4.596 2.442-6.32-.287-.575-1.005-3.017.288-6.177 0 0 2.01-.574 6.464 2.442 1.866-.574 3.877-.718 5.888-.718 2.01 0 4.022.286 5.89.717 4.453-3.016 6.464-2.442 6.464-2.442 1.293 3.16.43 5.602.287 6.177a9.29 9.29 0 0 1 2.44 6.32c0 9.05-5.458 10.918-10.63 11.492.863.718 1.58 2.155 1.58 4.31v6.464c0 .574.432 1.292 1.58 1.15 9.338-3.16 15.946-11.924 15.946-22.266-.143-12.785-10.63-23.27-23.558-23.27z" clip-rule="evenodd" fill-rule="evenodd"/></svg></div>
+                    </div>
+                </div>
+                <div class="break-space"></div>
+            </div>
+            <div>
+                <div class="project-container">
+                    <div class="project-subcontainer">
+                        <div class="project-entry project-entry-hover" onclick="window.open('https://github.com/jackkolb/froot', '_blank')">
+                            <div class="project-entry-title"><b>Froot</b></div>
+                            <div class="project-entry-tools"><span style='color:#ff33cc'><b>[Hackathon] </b></span><i>HTML/CSS, Javascript</i></div>
+                            <div class="big-space"></div>
+                            <div class="project-entry-desc">Creates recipes using discounted grocery items.</div>
+                            <div class="big-space"></div>
+                        </div>
+                        <div class="project-entry-hover"><svg class="project-github-icon" fill="black" viewBox="0 0 48 48" width="24" height="24"><path d="M23.928 1.15C11 1.15.514 11.638.514 24.566c0 10.343 6.75 19.105 15.945 22.265 1.148.144 1.58-.574 1.58-1.15v-4.02c-6.465 1.436-7.902-3.16-7.902-3.16-1.005-2.73-2.586-3.45-2.586-3.45-2.154-1.435.144-1.435.144-1.435 2.298.144 3.59 2.442 3.59 2.442 2.156 3.59 5.46 2.586 6.753 2.01.142-1.58.86-2.585 1.435-3.16-5.17-.574-10.63-2.585-10.63-11.635 0-2.585.862-4.596 2.442-6.32-.287-.575-1.005-3.017.288-6.177 0 0 2.01-.574 6.464 2.442 1.866-.574 3.877-.718 5.888-.718 2.01 0 4.022.286 5.89.717 4.453-3.016 6.464-2.442 6.464-2.442 1.293 3.16.43 5.602.287 6.177a9.29 9.29 0 0 1 2.44 6.32c0 9.05-5.458 10.918-10.63 11.492.863.718 1.58 2.155 1.58 4.31v6.464c0 .574.432 1.292 1.58 1.15 9.338-3.16 15.946-11.924 15.946-22.266-.143-12.785-10.63-23.27-23.558-23.27z" clip-rule="evenodd" fill-rule="evenodd"/></svg></div>
+                    </div>
+                </div>
+                <div class="break-space"></div>
+            </div>
+            <div>
+                <div class="project-container">
+                    <div class="project-subcontainer">
+                        <div class="project-entry project-entry-hover" onclick="window.open('https://github.com/jackkolb/goodmorning', '_blank')">
+                            <div class="project-entry-title"><b>GoodMorning</b></div>
+                            <div class="project-entry-tools"><i>Python, Tkinter, Several Web-Based APIs, Raspberry Pi</i></div>
+                            <div class="big-space"></div>
+                            <div class="project-entry-desc">A dynamic display of time, weather and market information.</div>
+                            <div class="big-space"></div>
+                        </div>
+                        <div class="project-entry-hover"><svg class="project-github-icon" fill="black" viewBox="0 0 48 48" width="24" height="24"><path d="M23.928 1.15C11 1.15.514 11.638.514 24.566c0 10.343 6.75 19.105 15.945 22.265 1.148.144 1.58-.574 1.58-1.15v-4.02c-6.465 1.436-7.902-3.16-7.902-3.16-1.005-2.73-2.586-3.45-2.586-3.45-2.154-1.435.144-1.435.144-1.435 2.298.144 3.59 2.442 3.59 2.442 2.156 3.59 5.46 2.586 6.753 2.01.142-1.58.86-2.585 1.435-3.16-5.17-.574-10.63-2.585-10.63-11.635 0-2.585.862-4.596 2.442-6.32-.287-.575-1.005-3.017.288-6.177 0 0 2.01-.574 6.464 2.442 1.866-.574 3.877-.718 5.888-.718 2.01 0 4.022.286 5.89.717 4.453-3.016 6.464-2.442 6.464-2.442 1.293 3.16.43 5.602.287 6.177a9.29 9.29 0 0 1 2.44 6.32c0 9.05-5.458 10.918-10.63 11.492.863.718 1.58 2.155 1.58 4.31v6.464c0 .574.432 1.292 1.58 1.15 9.338-3.16 15.946-11.924 15.946-22.266-.143-12.785-10.63-23.27-23.558-23.27z" clip-rule="evenodd" fill-rule="evenodd"/></svg></div>
+                    </div>
+                </div>
+                <div class="break-space"></div>
+            </div>
+            <div>
+                <div class="project-container">
+                    <div class="project-subcontainer">
+                        <div class="project-entry project-entry-hover" onclick="window.open('https://github.com/jackkolb/threecups', '_blank')">
+                            <div class="project-entry-title"><b>Three Cups</b></div>
+                            <div class="project-entry-tools"><span style='color:#ff33cc'><b>[Hackathon] </b></span><i>Python, OpenCV, Raspberry Pi</i></div>
+                            <div class="big-space"></div>
+                            <div class="project-entry-desc">A robot that observes and tracks three identical cups.</div>
+                            <div class="big-space"></div>
+                        </div>
+                        <div class="project-entry-hover"><svg class="project-github-icon" fill="black" viewBox="0 0 48 48" width="24" height="24"><path d="M23.928 1.15C11 1.15.514 11.638.514 24.566c0 10.343 6.75 19.105 15.945 22.265 1.148.144 1.58-.574 1.58-1.15v-4.02c-6.465 1.436-7.902-3.16-7.902-3.16-1.005-2.73-2.586-3.45-2.586-3.45-2.154-1.435.144-1.435.144-1.435 2.298.144 3.59 2.442 3.59 2.442 2.156 3.59 5.46 2.586 6.753 2.01.142-1.58.86-2.585 1.435-3.16-5.17-.574-10.63-2.585-10.63-11.635 0-2.585.862-4.596 2.442-6.32-.287-.575-1.005-3.017.288-6.177 0 0 2.01-.574 6.464 2.442 1.866-.574 3.877-.718 5.888-.718 2.01 0 4.022.286 5.89.717 4.453-3.016 6.464-2.442 6.464-2.442 1.293 3.16.43 5.602.287 6.177a9.29 9.29 0 0 1 2.44 6.32c0 9.05-5.458 10.918-10.63 11.492.863.718 1.58 2.155 1.58 4.31v6.464c0 .574.432 1.292 1.58 1.15 9.338-3.16 15.946-11.924 15.946-22.266-.143-12.785-10.63-23.27-23.558-23.27z" clip-rule="evenodd" fill-rule="evenodd"/></svg></div>
+                    </div>
+                </div>
+                <div class="break-space"></div>
+            </div>
+            <div>
+                <div class="project-container">
+                    <div class="project-subcontainer">
+                        <div class="project-entry project-entry-hover" onclick="window.open('https://github.com/jackkolb/transec', '_blank')">
+                            <div class="project-entry-title"><b>TranSec</b></div>
+                            <div class="project-entry-tools"><span style='color:#ff33cc'><b>[Hackathon] </b></span><i>C++, WinSock Library</i></div>
+                            <div class="big-space"></div>
+                            <div class="project-entry-desc">An end-to-end encrypted file transfer program.</div>
+                            <div class="big-space"></div>
+                        </div>
+                        <div class="project-entry-hover"><svg class="project-github-icon" fill="black" viewBox="0 0 48 48" width="24" height="24"><path d="M23.928 1.15C11 1.15.514 11.638.514 24.566c0 10.343 6.75 19.105 15.945 22.265 1.148.144 1.58-.574 1.58-1.15v-4.02c-6.465 1.436-7.902-3.16-7.902-3.16-1.005-2.73-2.586-3.45-2.586-3.45-2.154-1.435.144-1.435.144-1.435 2.298.144 3.59 2.442 3.59 2.442 2.156 3.59 5.46 2.586 6.753 2.01.142-1.58.86-2.585 1.435-3.16-5.17-.574-10.63-2.585-10.63-11.635 0-2.585.862-4.596 2.442-6.32-.287-.575-1.005-3.017.288-6.177 0 0 2.01-.574 6.464 2.442 1.866-.574 3.877-.718 5.888-.718 2.01 0 4.022.286 5.89.717 4.453-3.016 6.464-2.442 6.464-2.442 1.293 3.16.43 5.602.287 6.177a9.29 9.29 0 0 1 2.44 6.32c0 9.05-5.458 10.918-10.63 11.492.863.718 1.58 2.155 1.58 4.31v6.464c0 .574.432 1.292 1.58 1.15 9.338-3.16 15.946-11.924 15.946-22.266-.143-12.785-10.63-23.27-23.558-23.27z" clip-rule="evenodd" fill-rule="evenodd"/></svg></div>
+                    </div>
+                </div>
+                <div class="break-space"></div>
+            </div>
+        </section>
+
         <br /><br /><br /><br /><br />
 
         <script>
             var about_active = false;
             var projects_active = false;
-            var projectpage_active = false;
             var research_active = false;
         </script>
 
         <script src="js/index.js"></script>
-        <script src="js/project_page.js"></script>
         <script src="js/projects.js"></script>
         <script src="js/research.js"></script>
         <script src="js/about.js"></script>
         <script src="js/resume.js"></script>
-        <script src="js/timeline.js"></script>
         <script src="js/utility.js"></script>
 
         <script>

@@ -1,8 +1,9 @@
 User-agent: *
 Disallow: /css
-Disallow: /img
-Allow: /img/portraits/cherries.png
 Disallow: /js
 Disallow: /json
 Disallow: /new
 Disallow: /resume
+Allow: /img/portraits/cherries.png
+
+Sitemap: https://jackkolb.com/sitemap.xml
